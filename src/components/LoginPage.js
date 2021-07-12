@@ -5,30 +5,33 @@ export default class Welcome extends Component {
   render() {
     return (
       <div className="loginPage">
-        <h1 className="header">
-          fuse| <a className="hrm">HRM</a>
-        </h1>
-        <input placeholder="Username" id="username"></input>
-        <input placeholder="Password" id="password"></input>
+        <div className="header-text">
+          <a className="header">fuse </a>
+          <a className="hrm">| HRM</a>
+        </div>
+        <div className="loginPage__form">
+          <img src="user.png" id="userIcon"/>
+          <input placeholder="Username" id="username"></input> <br />
+          <img src="lock.png" id="lockIcon"/>
+          <input placeholder="Password" id="password"></input>
+        </div>
+        <div className="loginPage__reminders">
+          <label className="loginPage__rememberMe">
+            <input type="checkbox"></input>Remember me
+          </label>
+          <a id="forgetPassword">Forgot your password?</a>
+        </div>
 
-        <label className="loginPage__rememberMe">
-          <input type="checkbox"></input>Remember me
-        </label>
-        <a id="forgetPassword">Forget your password?</a>
         <button className="loginPage__signIn">Sign In</button>
         <p className="loginPage__orText">or</p>
-        <GoogleLogin
-          clientId="1058823769266-758kalf90cmirensqppf8qt6rfebpvjs.apps.googleusercontent.com"
-          render={(renderProps) => (
-            <button
-              onClick={renderProps.onClick}
-              disabled={renderProps.disabled}
-              className="loginPage__loginBtn"
-            >
-            Sign in with Google
-            </button>
-          )}
-        />
+        <div className="loginPage__signBtn">
+          <GoogleLogin
+            clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+            buttonText="Sign in with Google"
+            cookiePolicy={"single_host_origin"}
+            className="loginPage__signWithGoogleBtn"
+          />
+        </div>
       </div>
     );
   }

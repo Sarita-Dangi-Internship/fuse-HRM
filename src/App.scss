@@ -1,60 +1,102 @@
-
+body {
+  background-color: gainsboro;
+}
 
 .loginPage {
-  background-color: gainsboro;
-  padding:15px;
+  background-color: white;
+  padding: 15px;
   border: 1px solid gray;
-  // width:30%;
   margin: 10% 35%;
- 
 
-  .header {
-    margin-top: 30px;
-    color:rgb(226, 143, 34);
+  .header-text {
     text-align: center;
-  
-    .hrm{
-      color:rgb(68, 221, 221);
-      font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    .header {
+      font-weight: bold;
+      position: relative;
+      margin-top: 30px;
+      font-size: 32px;
+      color: rgb(6, 48, 77);
+    }
+    .hrm {
+      font-weight: lighter;
+      font-size: 32px;
+      color: rgb(6, 48, 77);
+    }
+  }
+
+  &__form {
+    position: relative;
+    padding: 2px;
+    font-size: 15px;
+
+    img {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+    }
+    #userIcon{
+      top:35px;
+    }
+    
+    #lockIcon{
+      top:96px;
     }
   }
 
   #username {
-    width:97%;
-    margin-top: 25px;
+    text-indent: 20px;
+    width: 97%;
+    border: none;
+    border-bottom: 1px solid rgb(204, 201, 201);
+    margin-top: 30px;
     padding: 5px;
   }
 
-  #password{
-    width:97%;
-    margin-top: 20px;
+  #password {
+    text-indent: 20px;
+    width: 97%;
+    border: none;
+    border-bottom: 1px solid rgb(204, 201, 201);
+    margin-top: 35px;
+    text-align: left;
     padding: 5px;
-    margin-bottom: 20px;
   }
+
+  &__reminders{
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
   #forgetPassword {
-    color: blue;
-    margin-left:65px;
-    
-  }
-  &__rememberMe{
-    color:gray;
+    color: rgb(6, 48, 77);
+    margin-left: 65px;
   }
 
- 
+  &__rememberMe {
+    color: gray;
+  }
+
   &__signIn {
-    margin-top: 20px;
-    background-color: rgb(30, 30, 73);
+
+    height: 45px;
+    margin-top: 40px;
+    background-color: rgb(6, 48, 77);
+    border-radius: 5px;
     text-align: center;
     width: 100%;
+    font-size: 15px;
     padding: 5px;
     color: wheat;
   }
-  &__orText{
+
+  &__orText {
     text-align: center;
     margin: 8px;
   }
 
-  &__loginBtn{
+  &__loginBtn {
     color: wheat;
     border: 2px solid rgb(121, 121, 236);
     padding: 5px;
@@ -63,5 +105,16 @@
     width: 100%;
     margin-bottom: 30px;
   }
+
+  &__signBtn {
+    border: 1px solid rgb(6, 48, 77);
+    margin-bottom: 50px;
+  }
+
+  &__signWithGoogleBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
 
 }
