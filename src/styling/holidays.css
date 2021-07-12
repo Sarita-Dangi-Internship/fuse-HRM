@@ -1,0 +1,75 @@
+.holiday {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin: 3rem auto;
+  width: 60%;
+  color: #8b849a;
+  text-align: left;
+  background: #f6f6f7;
+}
+.holiday .title {
+  display: grid;
+  grid-template-columns: 11.3fr 0.7fr;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 0 10px 0;
+}
+.holiday h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 20px;
+  margin: 0;
+}
+.close_btn {
+  margin-top: 2px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #8b849a;
+  color: white;
+  border-style: none;
+}
+.holidays {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 50px;
+}
+
+.holiday_box {
+  font-weight: 600;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  text-align: left;
+  background: #ffffff;
+  margin: 0px 10px;
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px 5px rgb(202, 198, 198);
+}
+
+.line {
+  background: #135db0;
+  width: 4px;
+  height: 30px;
+}
+.line_in_box {
+  height: auto;
+  border-radius: 5px;
+}
+.line_out_box {
+  margin-left: 20px;
+}
+.line_end {
+  border-radius: 0 0 5px 5px;
+  margin-left: 20px;
+  height: 0.1rem;
+}
+.circle {
+  margin: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -10px;
+  left: 0.93rem;
+}
