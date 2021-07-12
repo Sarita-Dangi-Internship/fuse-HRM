@@ -1,0 +1,67 @@
+
+
+.loginPage {
+  background-color: gainsboro;
+  padding:15px;
+  border: 1px solid gray;
+  // width:30%;
+  margin: 10% 35%;
+ 
+
+  .header {
+    margin-top: 30px;
+    color:rgb(226, 143, 34);
+    text-align: center;
+  
+    .hrm{
+      color:rgb(68, 221, 221);
+      font-size: 18px;
+    }
+  }
+
+  #username {
+    width:97%;
+    margin-top: 25px;
+    padding: 5px;
+  }
+
+  #password{
+    width:97%;
+    margin-top: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  #forgetPassword {
+    color: blue;
+    margin-left:65px;
+    
+  }
+  &__rememberMe{
+    color:gray;
+  }
+
+ 
+  &__signIn {
+    margin-top: 20px;
+    background-color: rgb(30, 30, 73);
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    color: wheat;
+  }
+  &__orText{
+    text-align: center;
+    margin: 8px;
+  }
+
+  &__loginBtn{
+    color: wheat;
+    border: 2px solid rgb(121, 121, 236);
+    padding: 5px;
+    background-color: rgb(42, 141, 42);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+}
