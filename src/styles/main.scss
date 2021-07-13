@@ -1,8 +1,8 @@
 // ==========================================================================
 // Global Settings
 // ==========================================================================
-// @import 'helpers/config';
-// @import 'helpers/colors';
+@import 'helpers/config';
+@import 'helpers/colors';
 // Mixins
 // @import 'helpers/mixins/breakpoints';
 // @import 'helpers/mixins/clearfix';
@@ -20,7 +20,7 @@
 // ==========================================================================
 @import 'base/reset';
 @import 'base/base';
-// @import 'base/typography';
+@import 'base/typography';
 
 // ==========================================================================
 // Components
@@ -30,15 +30,11 @@
 // @import 'components/button';
 // @import 'components/checkbox';
 
-//Layouts
-// @import 'layouts/todo';
-@import 'Layouts/blog';
+//components
+@import 'components/sidebar';
+@import 'components/navbar';
 
-// .banner {
-//   height: 500px;
-//   background-color: teal;
-//   @include slanted-edge(after, false, 3deg);
-// }
+
 
 
 
