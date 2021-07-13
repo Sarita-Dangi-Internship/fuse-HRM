@@ -3,6 +3,13 @@ body {
     font-family: Roboto;
 }
 
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .loginPage {
     background-color: #ffff;
     padding: 2px;

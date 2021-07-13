@@ -4,7 +4,7 @@ import { GoogleLogin } from "react-google-login";
 export default class LoginPage extends Component {
   render() {
     return (
-      <div style={{display:'flex', justifyContent:'center',alignItems:'center',height:'100vh'}}>
+      <div className="wrapper">
       <div className="loginPage">
         <div className="header">
           <a className="header-text">fuse </a>
