@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styling/holidays.css";
+import "../styles/main.scss";
 
 export class holiday extends Component {
   constructor() {
