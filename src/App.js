@@ -1,11 +1,11 @@
 
-import './App.scss';
-import Welcome from './components/LoginPage'
+import './styles/main.scss';
+import LoginPage from './components/LoginPage'
 
 
 function App() {
   return (
-   <Welcome />
+   <LoginPage />
   );
 }
 

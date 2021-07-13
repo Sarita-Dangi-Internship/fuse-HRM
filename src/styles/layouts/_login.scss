@@ -1,0 +1,162 @@
+body {
+    background-color: #E5E5E5;
+    font-family: Roboto;
+}
+
+.loginPage {
+    margin-top: 63px; 
+    margin-left: 358px;
+    background-color: #ffff;
+    height: 612px;
+    width: 621px;
+    padding: 2px;
+
+    .header {
+        width: 235px;
+        height: 56px;
+        margin: 53px 193px;
+        color: #0C396B;
+        line-height: 56px;
+        font-size: 48px;
+
+        .header-text {
+            font-weight: 700;
+        }
+
+        .hrm {
+            font-weight: 300;
+        }
+    }
+
+    &__form {
+        position: relative;
+        margin: 0px 54px;
+        color: #8B849A;
+
+        img {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+        }
+
+        #userIcon {
+            top: 7px;
+        }
+
+        #lockIcon {
+            top: 104px;
+        }
+
+        #username {
+            line-height: 27px;
+            width: 100%;
+            font-weight: 400;
+            text-indent: 23px;
+            border: none;
+            font-size: 18px;
+            border-bottom: 1px solid rgb(204, 201, 201);
+            padding: 5px;
+            margin-bottom: 60px;
+        }
+
+        #password {
+            line-height: 27px;
+            width: 100%;
+            text-indent: 23px;
+            border: none;
+            font-weight: 400;
+            font-size: 18px;
+            border-bottom: 1px solid rgb(204, 201, 201);
+            padding: 5px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__reminders {
+        font-size: 15px;
+        margin: 0px 54px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        margin-bottom: 51px;
+
+        .rememberMe {
+            color: #8B849A;
+        }
+
+        #forgetPassword {
+            color: #0C396B;
+            margin-left: 174px;
+        }
+    }
+
+    &__signIn {
+        margin: 0px 54px;
+        height: 41px;
+        background-color: #0C396B;
+        border-radius: 6px;
+        text-align: center;
+        width: 515px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        padding: 5px;
+        color: #ffff;
+    }
+
+    &__orText {
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-top: 13px;
+        color: #8B849A;
+        margin-bottom: 15px;
+
+        .line-left {
+            position: absolute;
+            margin-top: 14px;
+            height: 1px;
+            background-color: #8B849A;
+            width: 57px;
+            margin-left: 236px;
+        }
+
+        .line-right {
+            position: absolute;
+            top: 14px;
+            left: 90px;
+            height: 1px;
+            background-color: #8B849A;
+            width: 57px;
+            margin-left: 236px;
+        }
+    }
+
+    &__signBtn {
+        margin: 0px 54px;
+        position: relative;
+        height: 41px;
+        width: 515px;
+
+        .signWithGoogleBtn {
+            color: #5B92D0;
+            position: absolute;
+            width: 515px;
+            border-radius: 6px;
+            height: 41px;
+            z-index: 0;
+            background-color: #FFFFFF;
+            border: 1px solid #5B92D0;
+        }
+
+        .google-img {
+            position: absolute;
+            top: 6px;
+            left: 155px;
+            margin-right: 16px;
+            z-index: 1;
+        }
+    }
+}
