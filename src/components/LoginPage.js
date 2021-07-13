@@ -4,6 +4,7 @@ import { GoogleLogin } from "react-google-login";
 export default class LoginPage extends Component {
   render() {
     return (
+      <div style={{display:'flex', justifyContent:'center',alignItems:'center',height:'100vh'}}>
       <div className="loginPage">
         <div className="header">
           <a className="header-text">fuse </a>
@@ -44,6 +45,7 @@ export default class LoginPage extends Component {
             cookiePolicy={"single_host_origin"}
           />
         </div>
+      </div>
       </div>
     );
   }

@@ -4,11 +4,7 @@ body {
 }
 
 .loginPage {
-    margin-top: 63px;
-    margin-left: 358px;
     background-color: #ffff;
-    height: 612px;
-    width: 621px;
     padding: 2px;
 
     .header {
@@ -142,7 +138,8 @@ body {
         margin: 0px 54px;
         position: relative;
         height: 41px;
-        width: 515px;
+       
+        margin-bottom: 63px;
 
         .signWithGoogleBtn {
             color: #5B92D0;
@@ -154,6 +151,7 @@ body {
             z-index: 0;
             background-color: #FFFFFF;
             border: 1px solid #5B92D0;
+           
         }
 
         .google-img {
