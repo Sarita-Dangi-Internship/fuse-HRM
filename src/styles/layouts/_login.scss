@@ -4,7 +4,7 @@ body {
 }
 
 .loginPage {
-    margin-top: 63px; 
+    margin-top: 63px;
     margin-left: 358px;
     background-color: #ffff;
     height: 612px;
@@ -75,22 +75,26 @@ body {
     &__reminders {
         font-size: 15px;
         margin: 0px 54px;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 27px;
-        margin-bottom: 51px;
+        margin-bottom: 42px;
 
         .rememberMe {
             color: #8B849A;
+            margin-left: 5px;
+            font-weight: 500;
+            line-height: 27px;
+            font-size: 20px;
         }
 
         #forgetPassword {
             color: #0C396B;
+            line-height: 27px;
             margin-left: 174px;
+            font-weight: 500;
+            font-size: 20px;
         }
     }
 
-    &__signIn {
+    &__signInBtn {
         margin: 0px 54px;
         height: 41px;
         background-color: #0C396B;
@@ -134,7 +138,7 @@ body {
         }
     }
 
-    &__signBtn {
+    &__signBtnGoogle {
         margin: 0px 54px;
         position: relative;
         height: 41px;
@@ -143,6 +147,7 @@ body {
         .signWithGoogleBtn {
             color: #5B92D0;
             position: absolute;
+            padding:2px;
             width: 515px;
             border-radius: 6px;
             height: 41px;
@@ -153,8 +158,10 @@ body {
 
         .google-img {
             position: absolute;
-            top: 6px;
+            top: 5px;
             left: 155px;
+            height: 30px;
+            width: 30px;
             margin-right: 16px;
             z-index: 1;
         }

@@ -16,19 +16,19 @@ export default class LoginPage extends Component {
           <input placeholder="Password" id="password"></input>
         </div>
         <div className="loginPage__reminders">
-          <label className="rememberMe">
-            <input type="checkbox"></input>Remember me
+        <input type="checkbox" id="loginPage-checkbox"></input>
+          <label className="rememberMe">Remember me
           </label>
           <a id="forgetPassword">Forgot your password?</a>
         </div>
 
-        <button className="loginPage__signIn">Sign In</button>
+        <button className="loginPage__signInBtn">Sign In</button>
         <div className="loginPage__orText">
           <div className="line-left"></div>
           <a>or</a>
           <div className="line-right"></div>
           </div>
-        <div className="loginPage__signBtn">
+        <div className="loginPage__signBtnGoogle">
           <img src="google.svg" className="google-img"></img>
           <GoogleLogin
             clientId="1058823769266-758kalf90cmirensqppf8qt6rfebpvjs.apps.googleusercontent.com"
