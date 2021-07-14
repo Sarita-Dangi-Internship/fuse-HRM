@@ -33,17 +33,18 @@ $white: #ffffff;
   }
 }
 .profile__operation {
-    width: 75%;
+  width: 75%;
+  margin-left: auto;
 
-    &__list {
-        border-radius: 5px;
-      background-color: $white;
-    }
-    &__item {
-      border: 1px solid $gray;
-      padding: 12px 15px;
-      &--icon{
-          padding:10px;
-      }
+  &__list {
+    border-radius: 5px;
+    background-color: $white;
+  }
+  &__item {
+    border: 1px solid $gray;
+    padding: 12px 15px;
+    &--icon {
+      padding: 10px;
     }
   }
+}
