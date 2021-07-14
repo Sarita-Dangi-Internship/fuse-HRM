@@ -55,6 +55,7 @@ a {
 
 a:hover {
   background: #ddd;
+  text-decoration: none;
 }
 .btn_props {
   background: #e5eaf1;
@@ -87,23 +88,4 @@ a:hover {
   position: absolute;
   top: 530px;
   left: 515px;
-}
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-.down_arr {
-  border: none;
-  position: absolute;
-  left: 1280px;
-  top: 32px;
-}
-.down_arr:hover {
-  cursor: pointer;
 }
