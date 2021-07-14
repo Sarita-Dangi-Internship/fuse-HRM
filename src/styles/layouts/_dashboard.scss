@@ -9,12 +9,27 @@ $black: #000000;
   flex-flow: row;
   align-items: center;
 }
-
+.wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+}
+.aside {
+  order: 1;
+  flex-basis: 25%;
+}
+.wrapper__body {
+  order: 2;
+  flex-grow: 5;
+  flex-basis: 50%;
+  border-radius: 50px 0px 0px 50px;
+  padding: 0px 60px 20px;
+  background-color: $gray;
+}
 .main-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  background-color: $gray;
 
   &__left {
     flex-grow: 2;
@@ -27,6 +42,8 @@ $black: #000000;
       border-radius: 5px;
       padding: 20px 27px;
       color: $white;
+      box-shadow: 0 4px 9px #cac9c9;
+
       .profile-img {
         height: 60px;
         width: 60px;
@@ -42,6 +59,8 @@ $black: #000000;
       margin-top: 25px;
       padding: 0px 16px;
       color: $gray-text;
+      box-shadow: 0 4px 9px #cac9c9;
+
       h4 {
         border-bottom: 1px solid $gray;
         padding: 9px 0px;
@@ -80,11 +99,14 @@ $black: #000000;
 
     &__calender {
       background-color: $white;
+      box-shadow: 0 4px 9px #cac9c9;
     }
 
     &__holidays {
       background-color: $white;
       margin-top: 17px;
+      box-shadow: 0 4px 9px #cac9c9;
+
       .holiday__head {
         @extend %flex-display;
         background-color: $darkBlue;
@@ -108,10 +130,10 @@ $black: #000000;
         .holiday__list {
           @extend %flex-display;
           justify-content: space-between;
-          border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);;
+          border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
           padding: 10px;
           .holiday__date {
-           color: $gray-text;
+            color: $gray-text;
           }
           .holiday__detail {
             color: $black;
@@ -123,6 +145,8 @@ $black: #000000;
     &__leave {
       background-color: $white;
       margin-top: 17px;
+      box-shadow: 0 4px 9px #cac9c9;
+
       .leave__head {
         @extend %flex-display;
         background-color: $darkBlue;
@@ -144,7 +168,7 @@ $black: #000000;
       }
       .leave__list {
         @extend %flex-display;
-        
+
         .leave__detail {
           padding: 10px;
         }
