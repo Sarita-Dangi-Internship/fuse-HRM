@@ -1,0 +1,55 @@
+.close span {
+  background-color: #8b849a;
+  border-radius: 55px;
+  padding: 0px 5px;
+  color: white;
+  height: 20px;
+}
+.modal-content {
+  width: 780px !important;
+
+  border-radius: 0px;
+}
+.modal-header {
+  border-bottom: none !important;
+}
+.modal-body {
+  margin: 0px 0px 0px 15px ;
+  padding: 16px 16px 1px 16px !important;
+}
+
+.modal-title {
+  color: #8b849a;
+  font-size: 18px !important;
+}
+
+.form-group .form-control {
+  height: 48px;
+  width: 339px;
+  background: #e5eaf1;
+  
+
+  //  border-radius: 4px;
+}
+.form-group .form-control-big {
+    height:63px!important;
+}
+
+.profile-upload {
+  display: flex;
+  flex-direction: row;
+  .profilepic {
+    margin: 0px;
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+  }
+}
+.upload-title {
+  margin: 14px 10px;
+
+  h5 {
+    font-size: 14px !important;
+    color: #6f7482;
+  }
+}
