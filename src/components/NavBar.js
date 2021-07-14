@@ -4,6 +4,16 @@ import edit from "../templates/edit-profile.svg";
 import logout from "../templates/logout.svg";
 
 export default class NavBar extends Component {
+  state = {
+    dropdownShown: false,
+  };
+
+  handleDropDownShown = () => {
+    const currentState = this.state.dropdownShown;
+    this.setState({ dropdownShown: !currentState });
+  };
+ 
+
   render() {
     return (
       <header className="header">
@@ -18,26 +28,31 @@ export default class NavBar extends Component {
               </li>
               <li className="profile__detail__item">Employee Name</li>
               <li className="profile__detail__item">
-                <i class="fas fa-sort-down"></i>
+                <i
+                  class="fas fa-sort-down"
+                  onClick={() => this.handleDropDownShown()}
+                ></i>
               </li>
             </ul>
 
-            <div className="profile__operation">
-              <ul className="profile__operation__list">
-                <li className="profile__operation__item">
-                  <span className="profile__operation__item--icon">
-                    <img src={edit} />
-                  </span>
-                  Edit Profile
-                </li>
-                <li className="profile__operation__item">
-                  <span className="profile__operation__item--icon">
-                    <img src={logout} />
-                  </span>
-                  Logout
-                </li>
-              </ul>
-            </div>
+            {this.state.dropdownShown && (
+              <div className="profile__operation">
+                <ul className="profile__operation__list">
+                  <li className="profile__operation__item">
+                    <span className="profile__operation__item--icon">
+                      <img src={edit} />
+                    </span>
+                    Edit Profile
+                  </li>
+                  <li className="profile__operation__item">
+                    <span className="profile__operation__item--icon">
+                      <img src={logout} />
+                    </span>
+                    Logout
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </nav>
       </header>
