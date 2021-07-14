@@ -68,12 +68,9 @@ export class LeaveSummary extends Component {
   render() {
     return (
       <div>
-        {TopPage()}
-        <div className="top_page bg_color body">
-          <p className="font_body bg_color top_page inner_title">
-            Leave Summary
-          </p>
-          <Table striped bordered className="bg_color">
+        <div className="top_page body">
+          <p className="font_body top_page inner_title">Leave Summary</p>
+          <Table striped borderless>
             {TableHead()}
             {this.state.users.map((user, i) => {
               return <tbody className="font_body">{UserData(user, i)}</tbody>;
@@ -101,26 +98,6 @@ const UserData = (user, i) => {
   );
 };
 
-const TopPage = () => {
-  return (
-    <div className="nav_bar">
-      <p className="top_page title">Leave Summary</p>
-      <input
-        type="text"
-        placeholder="Search"
-        className="top_page bg_color search"
-      ></input>
-      <div className="photo_profile"></div>
-      <button className="down_arr">
-        <i class="arrow down" />
-      </button>
-      <div>
-        <p className="top_page employee_name">Employee Name</p>
-      </div>
-    </div>
-  );
-};
-
 const TableHead = () => {
   return (
     <thead className="font_body">
@@ -141,17 +118,17 @@ const TableHead = () => {
 const Footer = () => {
   return (
     <div>
-      <a href="#" className="btn_props previous round">
+      <a href="/" className="btn_props previous round">
         &#8249;
       </a>
-      <a href="#" className="btn_props next round">
+      <a href="/" className="btn_props next round">
         &#8250;
       </a>
-      <a href="#" className="btn_props prev_num curved_side">
+      <a href="/" className="btn_props prev_num curved_side">
         1
       </a>
-      <p className="txt bg_color">of</p>
-      <a href="#" className="btn_props next_num curved_side">
+      <p className="txt">of</p>
+      <a href="/" className="btn_props next_num curved_side">
         2
       </a>
     </div>
