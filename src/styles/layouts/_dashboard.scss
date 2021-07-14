@@ -1,0 +1,154 @@
+$darkBlue: #0c396b;
+$white: #fff;
+$gray: #e5e5e5;
+$gray-text: #8b849a;
+$black: #000000;
+
+%flex-display {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: $gray;
+
+  &__left {
+    flex-grow: 2;
+    height: fit-content;
+    margin-right: 25px;
+    &__profile {
+      width: 100%;
+      height: fit-content;
+      background-color: $darkBlue;
+      border-radius: 5px;
+      padding: 20px 27px;
+      color: $white;
+      .profile-img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-bottom: 14px;
+      }
+    }
+
+    &__leave-chart {
+      background-color: $white;
+      width: 100%;
+      height: fit-content;
+      margin-top: 25px;
+      padding: 0px 16px;
+      color: $gray-text;
+      h4 {
+        border-bottom: 1px solid $gray;
+        padding: 9px 0px;
+      }
+
+      .pi-chart {
+        display: flex;
+        justify-content: space-around;
+        padding: 25px;
+
+        &__indicator {
+          display: flex;
+          justify-content: space-between;
+          p {
+            margin-right: 10px;
+          }
+        }
+
+        &__list {
+          padding: 10px;
+        }
+
+        &__item {
+          padding: 17px;
+        }
+
+        &__fraction {
+          padding-left: 80px;
+        }
+      }
+    }
+  }
+
+  &__right {
+    flex-grow: 1;
+
+    &__calender {
+      background-color: $white;
+    }
+
+    &__holidays {
+      background-color: $white;
+      margin-top: 17px;
+      .holiday__head {
+        @extend %flex-display;
+        background-color: $darkBlue;
+        color: $white;
+        border-radius: 5px;
+        padding: 12px 15px;
+
+        &__right {
+          display: inline-flex;
+          align-items: center;
+          margin-left: auto;
+        }
+        &__icon {
+          margin: 10px;
+        }
+      }
+
+      .holiday__body {
+        padding: 12px;
+
+        .holiday__list {
+          @extend %flex-display;
+          justify-content: space-between;
+          border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);;
+          padding: 10px;
+          .holiday__date {
+           color: $gray-text;
+          }
+          .holiday__detail {
+            color: $black;
+          }
+        }
+      }
+    }
+
+    &__leave {
+      background-color: $white;
+      margin-top: 17px;
+      .leave__head {
+        @extend %flex-display;
+        background-color: $darkBlue;
+        color: $white;
+        border-radius: 5px;
+        padding: 12px 15px;
+
+        &__right {
+          display: inline-flex;
+          align-items: center;
+          margin-left: auto;
+        }
+        &__icon {
+          margin: 10px;
+        }
+      }
+      .leave__body {
+        padding: 12px;
+      }
+      .leave__list {
+        @extend %flex-display;
+        
+        .leave__detail {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
