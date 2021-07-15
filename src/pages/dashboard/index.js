@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-
 import profile from "../../templates/profile.png";
 import icon from "../../templates/person-icon.svg";
 import Calender from "../../components/Calender";
 import NavBar from "../../components/NavBar";
 import SideBar from "./../../components/SideBar";
+import PieChart from "./../../components/PieChart";
 
 export default class Dashboard extends Component {
   render() {
@@ -16,7 +15,6 @@ export default class Dashboard extends Component {
         </div>
 
         <div className="wrapper__body">
-          
           <NavBar />
 
           <div className="main-container">
@@ -30,7 +28,9 @@ export default class Dashboard extends Component {
                 <h4 className="">Total leave</h4>
                 <div className="pi-chart">
                   <div className="pi-chart__circle">
-                    <h1>Pi-chart</h1>
+                    <>
+                      <PieChart />
+                    </>
                     <div className="pi-chart__indicator">
                       <p>
                         <span className="pi-chart__color"></span>Used Leave

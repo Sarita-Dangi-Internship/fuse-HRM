@@ -1,13 +1,15 @@
-import './styles/main.scss';
+import "./styles/main.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
-import "bootstrap/dist/css/bootstrap.min.css";
+import DashBoard from "./pages/dashboard/index";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <SideBar />
+      {/* <NavBar />
+      <SideBar /> */}
+      <DashBoard />
     </div>
   );
 }

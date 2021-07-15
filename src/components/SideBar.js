@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import dashboard from "../templates/sidebar/dashboard.svg";
 import leave1 from "../templates/sidebar/leave-request.svg";
 import leave2 from "../templates/sidebar/leave-details.svg";

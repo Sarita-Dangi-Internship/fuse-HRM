@@ -1,4 +1,5 @@
 $darkBlue: #0c396b;
+$blue: #135db0;
 $white: #fff;
 $gray: #e5e5e5;
 $gray-text: #8b849a;
@@ -13,10 +14,11 @@ $black: #000000;
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
+  background-color: $blue;
 }
 .aside {
   order: 1;
-  flex-basis: 25%;
+  // flex-basis: 25%;
 }
 .wrapper__body {
   order: 2;
@@ -80,16 +82,16 @@ $black: #000000;
         }
 
         &__list {
-          padding: 10px;
+          padding: 0px;
         }
-
+        
         &__item {
+          display: flex;
+          justify-content: space-between;
           padding: 17px;
         }
 
-        &__fraction {
-          padding-left: 80px;
-        }
+        
       }
     }
   }

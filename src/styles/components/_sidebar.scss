@@ -1,6 +1,7 @@
 $sidenav: #135db0;
 $white: #fff;
 $hover: #B2D2F773;
+$darkBlue: #0c396b;
 
 .sidenav {
   background-color: $sidenav;
@@ -25,6 +26,7 @@ $hover: #B2D2F773;
     }
     &__item:hover{
         background-color: $hover;
+        color: $darkBlue;
     }
   }
 }
