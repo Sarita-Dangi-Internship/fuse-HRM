@@ -63,6 +63,7 @@ export class LeaveSummary extends Component {
           bal: 2.5,
         },
       ],
+      pageNum: 1,
     };
   }
   render() {
@@ -73,41 +74,77 @@ export class LeaveSummary extends Component {
         </div>
         <div className="body">
           <Table striped borderless>
-            <thead>
-              <tr className="font_style">
-                <th>Name</th>
-                <th>Opening Balance</th>
-                <th>Allocated Date</th>
-                <th>Accumulation Days</th>
-                <th>Accumulation Hours</th>
-                <th>Adjusted</th>
-                <th>Total</th>
-                <th>Used</th>
-                <th>Balance</th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.state.users.map((user) => {
-                return (
-                  <tr className="font_style">
-                    <td>{user.name}</td>
-                    <td>{user.opening_bal.toFixed(1)}</td>
-                    <td>{user.allocated_date.toFixed(1)}</td>
-                    <td>{user.accumulation_days.toFixed(1)}</td>
-                    <td>{user.accumulation_hrs.toFixed(1)}</td>
-                    <td>{user.adjusted.toFixed(1)}</td>
-                    <td>{user.total.toFixed(1)}</td>
-                    <td>{user.used.toFixed(1)}</td>
-                    <td>{user.bal.toFixed(1)}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
+            {/* Head of table */}
+            {TableHead()}
+            {/* Body of Table */}
+            {TableBody(this.state)}
           </Table>
+          {/* Pagination buttons */}
+          {Footer(this.state)}
         </div>
       </div>
     );
   }
 }
+
+const TableHead = () => {
+  return (
+    <thead>
+      <tr className="font_style">
+        <th>Name</th>
+        <th>Opening Balance</th>
+        <th>Allocated Date</th>
+        <th>Accumulation Days</th>
+        <th>Accumulation Hours</th>
+        <th>Adjusted</th>
+        <th>Total</th>
+        <th>Used</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+  );
+};
+
+const TableBody = (state) => {
+  return (
+    <tbody>
+      {state.users.map((user) => {
+        return (
+          <tr className="font_style">
+            <td>{user.name}</td>
+            <td>{user.opening_bal.toFixed(1)}</td>
+            <td>{user.allocated_date.toFixed(1)}</td>
+            <td>{user.accumulation_days.toFixed(1)}</td>
+            <td>{user.accumulation_hrs.toFixed(1)}</td>
+            <td>{user.adjusted.toFixed(1)}</td>
+            <td>{user.total.toFixed(1)}</td>
+            <td>{user.used.toFixed(1)}</td>
+            <td>{user.bal.toFixed(1)}</td>
+          </tr>
+        );
+      })}
+    </tbody>
+  );
+};
+
+const Footer = (state) => {
+  return (
+    <div className="btn_props">
+      <a href="/" className="round">
+        &#8249;
+      </a>
+      <a href="/" className="curved_side">
+        {state.pageNum}
+      </a>
+      <p className="txt font_style">of</p>
+      <a href="/" className="curved_side">
+        {state.pageNum + 1}
+      </a>
+      <a href="/" className="round">
+        &#8250;
+      </a>
+    </div>
+  );
+};
 
 export default LeaveSummary;
