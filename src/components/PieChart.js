@@ -18,10 +18,20 @@ export default class PieChart extends Component {
       <div>
         <Pie
           data={state}
+          width= "300px"
+          height= "300px"
           options={{
+            responsive: true,
+            maintainAspectRatio: true,
+            title: {
+              display: true,
+              text: "",
+              fontSize: 20,
+            },
             legend: {
-              display: false,
+              display: true,
               position: "bottom",
+              labels: { usePointStyle: true },
             },
           }}
         />

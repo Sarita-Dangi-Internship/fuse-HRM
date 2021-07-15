@@ -31,14 +31,6 @@ export default class Dashboard extends Component {
                     <>
                       <PieChart />
                     </>
-                    <div className="pi-chart__indicator">
-                      <p>
-                        <span className="pi-chart__color"></span>Used Leave
-                      </p>
-                      <p>
-                        <span className="pi-chart__color"></span>Remaining Leave
-                      </p>
-                    </div>
                   </div>
                   <div className="pi-chart__data">
                     <ul className="pi-chart__list">
