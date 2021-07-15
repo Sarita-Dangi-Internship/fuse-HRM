@@ -168,3 +168,15 @@ $black: #000000;
     }
   }
 }
+
+@media (max-width: 1363px) {
+  .main-container {
+    &__left {
+      margin-right: 0px;
+    }
+
+    &__right__calender {
+      margin-top: 17px;
+    }
+  }
+}
