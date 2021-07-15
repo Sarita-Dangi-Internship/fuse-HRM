@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import {
   Table,
   TableBody,
@@ -16,7 +17,7 @@ import {
 
 const useStyles = makeStyles(() => ({
   table: {
-    minWidth: 1000,
+    minWidth:500,
   },
   tableHeaderCell: {
     fontSize: 14,
