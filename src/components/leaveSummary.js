@@ -69,8 +69,10 @@ export class LeaveSummary extends Component {
   render() {
     return (
       <div>
+        {/* Body */}
         <div className="top_page body">
           <p className="font_body top_page inner_title">Leave Summary</p>
+          {/* Table */}
           <Table striped borderless>
             {TableHead()}
             {this.state.users.map((user, i) => {
@@ -82,6 +84,7 @@ export class LeaveSummary extends Component {
               );
             })}
           </Table>
+          {/* Page Number */}
           {Footer(this.state)}
         </div>
       </div>
@@ -93,13 +96,14 @@ const UserData = (user) => {
   return (
     <tr>
       <td>{user.name}</td>
-      <td>{user.opening_bal}</td>
-      <td>{user.allocated_date}</td>
-      <td>{user.accumulation_days}</td>
-      <td>{user.accumulation_hrs}</td>
-      <td>{user.total}</td>
-      <td>{user.used}</td>
-      <td>{user.bal}</td>
+      <td>{user.opening_bal.toFixed(1)}</td>
+      <td>{user.allocated_date.toFixed(1)}</td>
+      <td>{user.accumulation_days.toFixed(1)}</td>
+      <td>{user.accumulation_hrs.toFixed(1)}</td>
+      <td>{user.adjusted.toFixed(1)}</td>
+      <td>{user.total.toFixed(1)}</td>
+      <td>{user.used.toFixed(1)}</td>
+      <td>{user.bal.toFixed(1)}</td>
     </tr>
   );
 };
@@ -113,6 +117,7 @@ const TableHead = () => {
         <th>Allocated Date</th>
         <th>Accumulation Days</th>
         <th>Accumulation Hours</th>
+        <th>Adjusted</th>
         <th>Total</th>
         <th>Used</th>
         <th>Balance</th>
