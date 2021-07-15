@@ -21,6 +21,10 @@ $white: #ffffff;
 .header_profile {
   margin-left: auto;
 }
+.navbar__profile {
+  position: relative;
+}
+
 .profile__detail {
   @extend %navigation-display;
   .profile__image {
@@ -34,7 +38,10 @@ $white: #ffffff;
 }
 .profile__operation {
   width: 75%;
-  margin-left: auto;
+  position: absolute;
+  left: 50px;
+  top: 45px;
+  z-index: 1;
 
   &__list {
     border-radius: 5px;
