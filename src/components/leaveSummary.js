@@ -63,6 +63,7 @@ export class LeaveSummary extends Component {
           bal: 2.5,
         },
       ],
+      pageNum: 1,
     };
   }
   render() {
@@ -73,19 +74,24 @@ export class LeaveSummary extends Component {
           <Table striped borderless>
             {TableHead()}
             {this.state.users.map((user, i) => {
-              return <tbody className="font_body">{UserData(user, i)}</tbody>;
+              // i % 4 ? this.setState(this.state.users.pageNum, 1) : "";
+              return (
+                <tbody className="font_body" key={i}>
+                  {UserData(user)}
+                </tbody>
+              );
             })}
           </Table>
-          {Footer()}
+          {Footer(this.state)}
         </div>
       </div>
     );
   }
 }
 
-const UserData = (user, i) => {
+const UserData = (user) => {
   return (
-    <tr key={i}>
+    <tr>
       <td>{user.name}</td>
       <td>{user.opening_bal}</td>
       <td>{user.allocated_date}</td>
@@ -115,7 +121,7 @@ const TableHead = () => {
   );
 };
 
-const Footer = () => {
+const Footer = (state) => {
   return (
     <div>
       <a href="/" className="btn_props previous round">
@@ -125,11 +131,11 @@ const Footer = () => {
         &#8250;
       </a>
       <a href="/" className="btn_props prev_num curved_side">
-        1
+        {state.pageNum}
       </a>
       <p className="txt">of</p>
       <a href="/" className="btn_props next_num curved_side">
-        2
+        {state.pageNum + 1}
       </a>
     </div>
   );
