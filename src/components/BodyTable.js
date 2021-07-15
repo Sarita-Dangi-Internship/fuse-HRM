@@ -9,24 +9,19 @@ import {
   TableRow,
   Paper,
   Avatar,
-  Grid,
   Typography,
   TablePagination,
   TableFooter,
 } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   table: {
-    minWidth: 1006,
+    minWidth: 1000,
   },
   tableHeaderCell: {
     fontSize: 14,
     backgroundColor: "white",
     color: "#8B849A",
-  },
-  avatar: {
-    backgroundColor: "red",
-    color: "black",
   },
 
   status: {
@@ -41,15 +36,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const StyledTableCell = withStyles((theme) => ({
-  head: {},
+const StyledTableCell = withStyles(() => ({
   body: {
     fontSize: 14,
     color: "#8B849A",
   },
 }))(TableCell);
 
-const StyledTableRow = withStyles((theme) => ({
+const StyledTableRow = withStyles(() => ({
   root: {
     "&:nth-of-type(odd)": {
       backgroundColor: "#E5EAF1",
@@ -80,6 +74,8 @@ for (let i = 0; i < 14; i++) {
 }
 
 export default function BodyTable() {
+  console.log(USERS);
+  const classes = useStyles();
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
@@ -91,10 +87,8 @@ export default function BodyTable() {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
-  const classes = useStyles();
-  console.log(USERS);
   return (
-    <div className="detailBody" style={{display:'flex'}}>
+    <div className="detailBody" style={{ margin: "10px" }}>
       <TableContainer component={Paper}>
         <Table className={classes.table}>
           <TableHead>
@@ -157,35 +151,37 @@ export default function BodyTable() {
                   </Typography>
                 </StyledTableCell>
                 <StyledTableCell>{row.reason}</StyledTableCell>
-                <StyledTableCell style={{position:'relative',}}>
-                  
-                    <Avatar
-                      src="edit.svg"
-                      className={classes.avatar}
-                      style={{ position: 'absolute', top: '15px', left: '0px' }}
-                    />
-                    <Avatar
-                      src="remove.svg"
-                      className={classes.avatar}
-                      style={{ position: 'absolute', top: '15px', left: '40px' }}
-                    />
+                <StyledTableCell style={{ position: "relative" }}>
+                  <Avatar
+                    src="edit.svg"
+                    className={classes.avatar}
+                    style={{ position: "absolute", top: "15px", left: "0px" }}
+                  />
+                  <Avatar
+                    src="remove.svg"
+                    className={classes.avatar}
+                    style={{ position: "absolute", top: "15px", left: "40px" }}
+                  />
                 </StyledTableCell>
               </StyledTableRow>
             ))}
           </TableBody>
-          <TableFooter>
-            <TablePagination
-              rowsPerPageOptions={[5, 10, 15]}
-              component="div"
-              count={USERS.length}
-              rowsPerPage={rowsPerPage}
-              page={page}
-              onChangePage={handleChangePage}
-              onChangeRowsPerPage={handleChangeRowsPerPage}
-            />
-          </TableFooter>
         </Table>
       </TableContainer>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <TableFooter>
+          <TablePagination
+            rowsPerPageOptions={[5]}
+            component="div"
+            style={{ marginTop: "20px" }}
+            count={USERS.length}
+            rowsPerPage={rowsPerPage}
+            page={page}
+            onChangePage={handleChangePage}
+            onChangeRowsPerPage={handleChangeRowsPerPage}
+          />
+        </TableFooter>
+      </div>
     </div>
   );
 }

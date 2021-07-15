@@ -9,7 +9,6 @@ export default class LoginPage extends Component {
             <div className="leaveDetail--line"></div>
             <BodyTable />
         </div>
-        
       </div>
     );
   }
