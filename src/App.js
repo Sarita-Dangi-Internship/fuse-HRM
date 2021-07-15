@@ -1,5 +1,5 @@
 import "./App.css";
-import LeaveSummary from "./component/LeaveSummary";
+import LeaveSummary from "./component/leaveSummary";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {

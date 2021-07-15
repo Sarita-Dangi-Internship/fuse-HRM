@@ -46,8 +46,25 @@ a:hover {
   text-decoration: none !important;
   background: #c3c7c3 !important;
 }
-.round {
+.arrow_btn {
+  margin-left: 5px;
+  padding: 1px 9.5px 2px 9px;
   border-radius: 20px;
+  border: 2px solid rgba(139, 132, 154, 0.22);
+}
+.arrow {
+  border: solid #404245;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 .curved_side {
   border-radius: 5px;

@@ -108,9 +108,9 @@ const TableHead = () => {
 const TableBody = (state) => {
   return (
     <tbody>
-      {state.users.map((user) => {
+      {state.users.map((user, i) => {
         return (
-          <tr className="font_style">
+          <tr className="font_style" key={i}>
             <td>{user.name}</td>
             <td>{user.opening_bal.toFixed(1)}</td>
             <td>{user.allocated_date.toFixed(1)}</td>
@@ -130,8 +130,8 @@ const TableBody = (state) => {
 const Footer = (state) => {
   return (
     <div className="btn_props">
-      <a href="/" className="round">
-        &#8249;
+      <a href="/" className=" arrow_btn">
+        <i className="arrow left"></i>
       </a>
       <a href="/" className="curved_side">
         {state.pageNum}
@@ -140,8 +140,9 @@ const Footer = (state) => {
       <a href="/" className="curved_side">
         {state.pageNum + 1}
       </a>
-      <a href="/" className="round">
-        &#8250;
+
+      <a href="/" className="arrow_btn">
+        <i className="arrow right"></i>
       </a>
     </div>
   );
