@@ -1,8 +1,8 @@
 // ==========================================================================
 // Global Settings
 // ==========================================================================
-// @import 'helpers/config';
-// @import 'helpers/colors';
+@import 'helpers/config';
+@import 'helpers/colors';
 // Mixins
 // @import 'helpers/mixins/breakpoints';
 // @import 'helpers/mixins/clearfix';
@@ -27,13 +27,14 @@
 // Styles for generic UI components
 // Examples include navbar, dialog boxes, carousels, sidebar etc
 // ==========================================================================
-// @import 'components/button';
+@import 'components/button';
 // @import 'components/checkbox';
 
 //Layouts
-// @import 'layouts/todo';
-@import 'Layouts/blog';
 
+@import 'Layouts/index';
+@import 'Layouts/updateProfile.scss';
+@import 'Layouts/leaveRequest.scss';
 // .banner {
 //   height: 500px;
 //   background-color: teal;
