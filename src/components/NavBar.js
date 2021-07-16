@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import profile from "../templates/profile.png";
 import edit from "../templates/edit-profile.svg";
 import logout from "../templates/logout.svg";
+import searchicon from "../templates/search-icon.png";
 
 export default class NavBar extends Component {
   state = {
@@ -12,7 +13,6 @@ export default class NavBar extends Component {
     const currentState = this.state.dropdownShown;
     this.setState({ dropdownShown: !currentState });
   };
- 
 
   render() {
     return (
@@ -20,6 +20,10 @@ export default class NavBar extends Component {
         <nav className="navbar">
           <div className="navbar__title">
             <h1>Dashboard</h1>
+          </div>
+          <div className="navbar__search">
+            <img className="navbar__search--icon" src={searchicon} />
+            <input type="search" placeholder="search" />
           </div>
           <div className="navbar__profile">
             <ul className="profile__detail">
