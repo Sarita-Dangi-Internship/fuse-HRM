@@ -23,7 +23,7 @@ export default class NavBar extends Component {
           </div>
           <div className="navbar__search">
             <img className="navbar__search--icon" src={searchicon} />
-            <input type="search" placeholder="search" />
+            <input type="text" placeholder="search" />
           </div>
           <div className="navbar__profile">
             <ul className="profile__detail">
