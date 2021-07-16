@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 import {
   Table,
   TableBody,
@@ -17,14 +16,13 @@ import {
 
 const useStyles = makeStyles(() => ({
   table: {
-    minWidth:500,
+   
   },
   tableHeaderCell: {
     fontSize: 14,
     backgroundColor: "white",
     color: "#8B849A",
   },
-
   status: {
     fontSize: 14,
     color: "white",
@@ -89,7 +87,7 @@ export default function BodyTable() {
     setPage(0);
   };
   return (
-    <div className="detailBody" style={{ margin: "10px" }}>
+    <div className="detailBody">
       <TableContainer component={Paper}>
         <Table className={classes.table}>
           <TableHead>
