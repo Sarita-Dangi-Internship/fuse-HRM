@@ -9,13 +9,13 @@ import PieChart from "./../../components/PieChart";
 export default class Dashboard extends Component {
   render() {
     return (
-      <div className="wrapper">
-        <div className="aside">
-          <SideBar />
-        </div>
+      // <div className="wrapper">
+      //   <div className="aside">
+      //     <SideBar />
+      //   </div>
 
-        <div className="wrapper__body">
-          <NavBar />
+      //   <div className="wrapper__body">
+      //     <NavBar />
 
           <div className="main-container">
             <div className="main-container__left">
@@ -133,8 +133,8 @@ export default class Dashboard extends Component {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      //   </div>
+      // </div>
     );
   }
 }
