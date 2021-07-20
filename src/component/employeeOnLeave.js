@@ -62,7 +62,11 @@ const EmpBox = (state) => {
       {state.map((emp, i) => {
         return (
           <div key={i}>
-            <div className="line line_out_box"></div>
+            <div
+              className={`${
+                i === 0 || i === 1 ? "line_first" : "line"
+              } line_out_box`}
+            ></div>
             <div className="emp_detail">
               <div className="line line_in_box"></div>
               <div className="emp_avatar">
