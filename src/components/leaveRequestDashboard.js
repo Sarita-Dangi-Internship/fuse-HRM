@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 // import { Button, Modal, Form, Row, Col } from "react-bootstrap";
-import DatePicker from "react-datepicker";
 
-class leaveRequestDashboard extends Component {
+import Calender from "../components/Calendar";
+
+class LeaveRequestDashboard extends Component {
   render() {
-    return <div></div>;
+    return (
+    <div className="LeaveDashboard">
+      <Calender />
+          </div>
+          );
+    
   }
 }
-export default leaveRequestDashboard;
+export default LeaveRequestDashboard;
