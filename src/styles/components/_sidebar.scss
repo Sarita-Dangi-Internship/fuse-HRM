@@ -46,6 +46,7 @@ $darkBlue: #0c396b;
       border-right: 12px solid $darkBlue;
       a {
         color: $darkBlue;
+        text-decoration: none;
       }
       .dashboard-icon {
         background: url("../../templates/sidebar/dashboard-dark.png")
