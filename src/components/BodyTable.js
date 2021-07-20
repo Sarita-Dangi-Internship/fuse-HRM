@@ -32,6 +32,8 @@ const useStyles = makeStyles(() => ({
   avatar: {
     height: "25px",
     width: "25px",
+    position: "absolute",
+    top: "15px"
   },
 }));
 
@@ -154,12 +156,12 @@ export default function BodyTable() {
                   <Avatar
                     src="edit.svg"
                     className={classes.avatar}
-                    style={{ position: "absolute", top: "15px", left: "0px" }}
+                    style={{left: "0px" }}
                   />
                   <Avatar
                     src="remove.svg"
                     className={classes.avatar}
-                    style={{ position: "absolute", top: "15px", left: "40px" }}
+                    style={{left: "40px" }}
                   />
                 </StyledTableCell>
               </StyledTableRow>

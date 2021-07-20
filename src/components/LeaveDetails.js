@@ -1,15 +1,12 @@
 import React, { Component } from "react";
-import BodyTable from'./BodyTable';
+import BodyTable from "./BodyTable";
 export default class LoginPage extends Component {
   render() {
     return (
-      <div className="wrapper">
-        <div className="leaveDetail">
+          <div className="leaveDetail">
             <a className="leaveDetail__header">Total Leave</a>
-            <div className="leaveDetail--line"></div>
+            <div className="leaveDetail__header--line"></div>
             <BodyTable />
-        </div>
-    
       </div>
     );
   }
