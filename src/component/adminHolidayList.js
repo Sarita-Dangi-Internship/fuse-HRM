@@ -1,3 +1,4 @@
+import Modal from "./Modal";
 import React, { Component } from "react";
 import "../styles/main.scss";
 
@@ -41,16 +42,37 @@ export class adminHolidayList extends Component {
       ],
       pageNum: 1,
       totalPage: 3,
+      show: false,
     };
   }
+
+  showModal = (e) => {
+    this.setState({
+      show: !this.state.show,
+    });
+  };
+
   render() {
     return (
       <div className="holiday">
         <div>
           <h3 className="title">Holiday List</h3>
         </div>
-
-        <button className="add_btn">+Add</button>
+        <div>
+          <button
+            className="add_btn"
+            onClick={(e) => {
+              this.showModal();
+            }}
+          >
+            +Add
+          </button>
+          <Modal
+            onClose={this.showModal}
+            show={this.state.show}
+            holidays={this.state.holidays}
+          />
+        </div>
         {/* Top static line */}
         {TopLine()}
 

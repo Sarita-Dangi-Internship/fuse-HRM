@@ -1,0 +1,82 @@
+body {
+  font-family: Roboto;
+}
+.modal_wrapper {
+  background: #ffffff;
+  border-radius: 5px;
+  width: 775px;
+  border: 2px solid black;
+  margin: 10px auto;
+}
+.modal_header {
+  display: flex;
+  color: #8b849a;
+  letter-spacing: 0.496657px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+.modal_title {
+  width: 100%;
+  margin: 15px 0 6px 18px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+}
+.close_modal_btn {
+  color: #ffffff;
+  margin: 19px 20px 10px 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  border: none;
+  background: #8b849a;
+}
+.holiday_date_title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #6f7482;
+  margin: 29px 0 2px 27px;
+}
+.calendar {
+  margin: 0 403px 0 27px;
+  background: #e5eaf1;
+  border-radius: 4px;
+}
+.holiday_desc_title {
+  margin: 35px 0 2px 27px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6f7482;
+}
+.holiday_desc {
+  width: 721px;
+  height: 139px;
+  margin: 0 27px 5px 27px;
+}
+.modal_footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.add_holiday_btn {
+  margin: 10px 27px 10px 55px;
+  padding: 11px 31px;
+  color: #ffffff;
+  border: none;
+  background: #0c396b;
+  border-radius: 7px;
+}
+.add_holiday_btn:hover {
+  cursor: pointer;
+}
+.btn_cancel {
+  margin: 21px 0 21px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8b849a;
+  border: none;
+}
+.btn_cancel:hover {
+  cursor: pointer;
+}
