@@ -15,6 +15,7 @@ $black: #000000;
   flex-flow: row;
   justify-content: flex-start;
   background-color: $blue;
+  height:100vh;
 }
 .aside {
   order: 1;
@@ -25,13 +26,14 @@ $black: #000000;
   flex-grow: 5;
   flex-basis: 50%;
   border-radius: 50px 0px 0px 50px;
-  padding: 0px 60px 20px;
+  padding: 0px 39px 20px;
   background-color: $gray;
 }
 .main-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  padding: 0px 21px;
 
   &__left {
     flex-grow: 2;

@@ -168,6 +168,7 @@ export default function BodyTable() {
             ))}
           </TableBody>
         </Table>
+
       </TableContainer>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <TableFooter>

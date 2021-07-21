@@ -1,5 +1,5 @@
-
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/main.scss";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { routes } from "./constants/routes";
 import SideBar from "./components/SideBar";
