@@ -1,0 +1,125 @@
+.employees_on_leave {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin: 3rem auto;
+  width: 60%;
+  color: #8b849a;
+  text-align: left;
+  background: #f6f6f7;
+}
+.emp_on_leave {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 0 0 34px;
+}
+.emp_detail {
+  font-size: 13px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  text-align: left;
+  background: #ffffff;
+  letter-spacing: 0.496657px;
+  margin: 0 60px 0 26px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px 5px rgb(202, 198, 198);
+}
+.title {
+  display: grid;
+  grid-template-columns: 11.3fr 0.7fr;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 0 10px 0;
+}
+.employees_on_leave h3 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 20px;
+  margin: 0;
+}
+.emp_avatar {
+  display: flex;
+}
+.avatar {
+  border-radius: 20px;
+  margin: 0 4px 0 -6px;
+  cursor: pointer;
+  height: 50px !important;
+  width: 50px !important;
+  color: #d8d8d8;
+}
+.close_btn {
+  padding: 2px 6px 0;
+  margin-top: 2px;
+  height: 21px;
+  width: 22px;
+  border-radius: 20px;
+  background: #8b849a;
+  color: white;
+  border-style: none;
+}
+.line {
+  background: #135db0;
+  width: 4px;
+  height: 35px;
+}
+.line_first {
+  background: #135db0;
+  width: 4px;
+  height: 25px;
+}
+.line_in_box {
+  height: 44.86px;
+  border-radius: 5px;
+}
+.line_out_box {
+  margin-left: 36px;
+}
+.line_end {
+  border-radius: 0 0 10px 10px;
+  margin-left: 36px;
+  height: 1.2rem;
+}
+.circle {
+  margin: 34px 30.8px 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -15px;
+}
+.emp_info {
+  padding: 10px 0;
+}
+.page_num {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 60px 16px 0;
+  font-size: 14px;
+}
+.arrow_btn {
+  margin-left: 9px;
+  padding: 5px 8px 4px 9px;
+  border-radius: 50%;
+  border: 2px solid rgba(139, 132, 154, 0.22);
+}
+.arrow {
+  border: solid #135db0;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.pages {
+  color: #2f70b9;
+}
+.page_title {
+  margin-right: 15px;
+}
