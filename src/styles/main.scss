@@ -18,8 +18,8 @@
 // ==========================================================================
 // Base Styles
 // ==========================================================================
-@import 'base/reset';
-@import 'base/base';
+@import "base/reset";
+@import "base/base";
 // @import 'base/typography';
 
 // ==========================================================================
@@ -32,13 +32,10 @@
 
 //Layouts
 // @import 'layouts/todo';
-@import 'Layouts/blog';
+@import "Layouts/adminHolidayList";
 
 // .banner {
 //   height: 500px;
 //   background-color: teal;
 //   @include slanted-edge(after, false, 3deg);
 // }
-
-
-
