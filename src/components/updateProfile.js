@@ -1,13 +1,15 @@
 import logo from "../images/ladyloki1.png";
 import React, { Component } from "react";
 // import { connect } from 'react-redux';
-import { Button, Modal, Form, Row, Col } from "react-bootstrap";
+import { Container, Button, Modal, Form, Row, Col } from "react-bootstrap";
 
 class updateProfile extends Component {
   render() {
     return (
-      <div className="updateProfile">
-        <Modal.Dialog className=".modal-backdrop modal-profile">
+      
+        <div className="updateProfile">
+  
+    <Modal show={true} size="lg"  className=".modal-backdrop modal-profile">
           <Modal.Header closeButton>
             <Modal.Title>Update Profile</Modal.Title>
           </Modal.Header>
@@ -73,8 +75,11 @@ class updateProfile extends Component {
             <Button variant="secondary">Cancel</Button>
             <Button variant="primary">Save</Button>
           </Modal.Footer>
-        </Modal.Dialog>
-      </div>
+        </Modal>
+    
+</div>
+        
+      
     );
   }
 }
