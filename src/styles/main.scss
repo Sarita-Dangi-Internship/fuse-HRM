@@ -20,7 +20,7 @@
 // ==========================================================================
 @import 'base/reset';
 @import 'base/base';
-// @import 'base/typography';
+@import 'base/typography';
 
 // ==========================================================================
 // Components
@@ -41,6 +41,13 @@
 //   background-color: teal;
 //   @include slanted-edge(after, false, 3deg);
 // }
+//components
+@import 'components/sidebar';
+@import 'components/navbar';
+@import 'components/datepicker';
+@import 'layouts/dashboard';
+
+
 
 
 
