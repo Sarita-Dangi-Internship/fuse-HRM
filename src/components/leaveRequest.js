@@ -7,8 +7,9 @@ class leaveRequest extends Component {
     return (
       <div className="LeaveRequest updateProfile">
         <Modal show={true} size="lg" className=".modal-backdrop modal-profile">
-          <Modal.Header className="leaveRequest-header" closeButton>
+          <Modal.Header className="leaveRequest-header" >
             <Modal.Title>Leave Request</Modal.Title>
+            <button type="button" class="close-btn" aria-label="Close" closeButton></button>
           </Modal.Header>
 
           <Modal.Body>
@@ -52,11 +53,15 @@ class leaveRequest extends Component {
                   </Form.Control>
                 </Form.Group>
               </Row>
+              <div className="formCheck-text">
+              <div>Substitute</div>
               <Form.Check
                 type="switch"
                 id="custom-switch"
-                label="Check this switch"
-              />
+                label=""
+                className=""
+              /> 
+              </div>
             </Form>
           </Modal.Body>
 

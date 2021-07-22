@@ -64,10 +64,9 @@
     }
   }
 }
-.modal-footer .btn-primary  {
+.dark-btn  .btn-primary  {
   background-color: #0C396B;
-  height: 38px;
-width: 88px;
+ 
 &:hover{
   background-color: #0C396B;
 }
@@ -75,12 +74,11 @@ width: 88px;
 border-radius: 7px;
 
 }
-.modal-footer .btn-secondary{
+.dark-btn .btn-secondary{
 background-color: white;
 color:black;
 border:none;
-height: 38px;
-width: 88px;
+
 border-radius: 7px;
 color:#8B849A;
 ;
@@ -91,6 +89,14 @@ width: 83px;
 border-radius: 5px;
 font-size: 12px !important;
 
+}
+.close-btn{
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM15 13.59L13.59 15L10 11.41L6.41 15L5 13.59L8.59 10L5 6.41L6.41 5L10 8.59L13.59 5L15 6.41L11.41 10L15 13.59Z' fill='%238B849A'/%3E%3C/svg%3E");
+  height: 20px;
+  width: 20px;
+  border:none;
+  
+  
 }
 
 // ==========================================================================

@@ -1,8 +1,61 @@
-.LeaveDashboard .react-datepicker{
-   
-    .react-datepicker__month-container{
-        width: 900px;
-        padding: 40px;
-        background-color: blueviolet;
+.custom_calendar .react-datepicker {
+  .react-datepicker__month-container {
+    
+
+    .react-datepicker__day {
     }
+  }
+}
+.custom-calendar {
+    .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
+        width: 2.7rem;
+        line-height: 2.7rem;
+    }
+    .react-datepicker__day:hover,
+     .react-datepicker__month-text:hover,
+      .react-datepicker__quarter-text:hover, .react-datepicker__year-text:hover{
+        border-radius:50%;
+    }
+  .react-datepicker__day--selected,
+  .react-datepicker__day--in-selecting-range,
+  .react-datepicker__day--in-range,
+  .react-datepicker__month-text--selected,
+  .react-datepicker__month-text--in-selecting-range,
+  .react-datepicker__month-text--in-range,
+  .react-datepicker__quarter-text--selected,
+  .react-datepicker__quarter-text--in-selecting-range,
+  .react-datepicker__quarter-text--in-range,
+  .react-datepicker__year-text--selected,
+  .react-datepicker__year-text--in-selecting-range,
+  .react-datepicker__year-text--in-range {
+    border-radius: 50%;
+  }
+  .react-datepicker__navigation-icon::before, .react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow{
+    border-width:0;
+  }
+  .react-datepicker__navigation--previous{
+    height:20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='34' height='20' viewBox='0 0 34 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 11L32.3193 11M2 11L6.47899 15.5L10.958 20M2 11L6.47899 6.5L10.958 2' stroke='%23404245' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+  .react-datepicker__navigation--next{
+    height:20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='34' height='22' viewBox='0 0 34 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 11L1.68067 11M32 11L27.521 15.5L23.042 20M32 11L27.521 6.5L23.042 2' stroke='%23404245' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+}
+.dark-btn .leave-btn .btn-primary{
+  width: 119px;
+}
+.card-header{
+  background-color: white;
+}
+.list-group-item{
+  border-bottom: none;
+}
+.card-list{
+  flex-grow: 1;
+  border: none;
+}
+.card-list-number{
+  border: none;
+
 }

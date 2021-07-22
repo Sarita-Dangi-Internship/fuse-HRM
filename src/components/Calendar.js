@@ -6,7 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 // CSS Modules, react-datepicker-cssmodules.css
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
-const Calender =() => {
+const Calendar =() => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(null);
   const onChange = (dates) => {
@@ -22,9 +22,9 @@ const Calender =() => {
       endDate={endDate}
       selectsRange
       inline
-      className="sanjay123"
+      
     />
   );
 };
 
-export default Calender;
+export default Calendar;

@@ -9,3 +9,37 @@
   border-radius: 4px;
   padding: 12px;
 }
+.formCheck-text{
+  display: inline-flex;
+
+}
+.custom-control-input:checked~.custom-control-label::before{
+  background-color: #5A9E00;
+  border-color: #5A9E00;
+  height: 20px;
+    width: 40px;
+
+}
+.custom-switch .custom-control-label::after{
+  background-color: white;
+  height: 16px;
+    width: 16px;
+}
+  
+
+
+.custom-switch .custom-control-label::before{
+  background-color: #8B849A78;
+  height: 20px;
+    width: 40px;
+}
+.custom-control-input{
+  height: 28.216218948364258px;
+width: 46.41999816894531px;
+
+border-radius: 0px;
+}
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+ 
+  left: calc(-2.25rem + 10px);
+}

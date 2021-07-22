@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import profile from "../../templates/profile.png";
 import icon from "../../templates/person-icon.svg";
-import Calender from "../../components/Calender";
+import Calendar from "../../components/Calendar";
 import NavBar from "../../components/NavBar";
 import SideBar from "./../../components/SideBar";
 import PieChart from "./../../components/PieChart";
@@ -57,7 +57,7 @@ export default class Dashboard extends Component {
             </div>
             <div className="main-container__right">
               <div className="main-container__right__calender">
-                <Calender />
+                <Calendar />
               </div>
               <div className="main-container__right__holidays">
                 <div className="holiday__head">
