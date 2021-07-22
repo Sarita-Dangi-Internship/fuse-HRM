@@ -1,6 +1,6 @@
 import AddHoliday from "./AddHoliday";
 import React, { Component } from "react";
-import "../styles/main.scss";
+import "../../styles/main.scss";
 
 export class adminHolidayList extends Component {
   constructor() {

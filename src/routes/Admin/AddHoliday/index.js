@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Col, Form, Modal } from "react-bootstrap";
-import "../styles/main.scss";
-import calendarPic from "../calendar.png";
-import Calendar from "./addHoliday/component/Calendar";
+import "../../../styles/main.scss";
+import calendarPic from "../../../calendar.png";
+import Calendar from "./component/Calendar";
 
 export default class addHoliday extends Component {
   onClose = (e) => {
