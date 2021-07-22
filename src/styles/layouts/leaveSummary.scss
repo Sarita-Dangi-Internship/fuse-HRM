@@ -16,16 +16,16 @@ table {
   width: 977px !important;
   margin: 0 15px;
 }
-th,
-td {
+.font_style th,
+.font_style td {
   font-size: 14px;
   letter-spacing: 0.496657px;
 }
-th {
+.font_style th {
   font-weight: 600;
   padding: 33px 0 14px 9px !important;
 }
-td {
+.font_style td {
   padding: 0 0 0 9px !important;
   line-height: 75px;
 }
@@ -34,7 +34,7 @@ td {
   display: flex;
   font-size: 14px;
 }
-a {
+.btn_props a {
   color: #404245 !important;
   margin: 32px 15px;
   padding: 5px;
@@ -42,7 +42,7 @@ a {
   height: 31px;
   background: #e5eaf1 !important;
 }
-a:hover {
+.btn_props a:hover {
   text-decoration: none !important;
   background: #c3c7c3 !important;
 }
