@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { GoogleLogin } from "react-google-login";
 import {setToken, getToken} from "../utils/token";
+import {REACT_APP_GOOGLE_CLIENT_ID} from "../utils/config";
 
 
 export default class LoginPage extends Component {
@@ -37,7 +38,7 @@ export default class LoginPage extends Component {
           <div className="loginPage__signBtnGoogle">
             <img src="google.svg" className="google-img"></img>
             <GoogleLogin
-              clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+              clientId={REACT_APP_GOOGLE_CLIENT_ID}
               render={(renderProps) => (
                 <button
                   onClick={renderProps.onClick}
