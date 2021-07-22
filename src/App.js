@@ -5,7 +5,7 @@ import { routes } from "./constants/routesURL";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
 import DashBoard from "./routes/dashboard/index";
-import AdminComponent from "./routes/Admin";
+import AdminComponent from "./routes/admin";
 
 function App() {
   return (
