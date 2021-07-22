@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/main.scss";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import { routes } from "./constants/routes";
+import { routes } from "./constants/routesURL";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
-import DashBoard from "./pages/dashboard/index";
+import DashBoard from "./routes/dashboard/index";
 
 function App() {
   return (
