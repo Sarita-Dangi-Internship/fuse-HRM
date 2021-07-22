@@ -37,12 +37,6 @@ export default class SideBar extends Component {
               <span>Leave Summary</span>
             </Link>
           </li>
-          <li className="sidenav__list__item">
-            <Link to={routes.admin.holidayList}>
-              <span className="sidenav__list__item--icon leave-summary-icon"></span>
-              <span>Holiday List</span>
-            </Link>
-          </li>
         </ul>
       </aside>
     );

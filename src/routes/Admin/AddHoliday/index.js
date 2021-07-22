@@ -8,6 +8,7 @@ export default class addHoliday extends Component {
   onClose = (e) => {
     this.props.onClose && this.props.onClose(e);
   };
+
   render() {
     if (!this.props.show) {
       return null;
@@ -34,6 +35,7 @@ export default class addHoliday extends Component {
                     className="calendar_pic"
                     alt="calendar"
                     src={calendarPic}
+                    onClick={<Calendar />}
                   />
                 </div>
               </Form.Group>
