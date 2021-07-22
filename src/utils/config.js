@@ -1,1 +1,3 @@
-export const REACT_APP_GOOGLE_CLIENT_ID ='1058823769266-758kalf90cmirensqppf8qt6rfebpvjs.apps.googleusercontent.com';
+const config = {
+  baseURL: process.env.REACT_APP_CLIENT_ID,
+};
