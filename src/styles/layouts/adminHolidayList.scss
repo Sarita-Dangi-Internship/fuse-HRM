@@ -106,13 +106,12 @@
 }
 .close_btn {
   padding: 0;
-  margin: 0 0 0 110px;
-  height: 15px;
-  width: 15px;
+  margin: 0 0 0 100px;
+  width: 22px;
   border-radius: 20px;
   background: #8b849a;
   color: white;
-  border-style: none;
+  border: none;
 }
 .page_num {
   display: flex;
@@ -121,7 +120,7 @@
 }
 .arrow_btn {
   margin-left: 9px;
-  padding: 1px 4px;
+  padding: 1px 7px;
   border-radius: 50%;
   border: 2px solid rgba(139, 132, 154, 0.22);
 }

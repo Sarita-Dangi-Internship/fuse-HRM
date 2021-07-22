@@ -1,4 +1,4 @@
-import Modal from "./Modal";
+import AddHoliday from "./AddHoliday";
 import React, { Component } from "react";
 import "../styles/main.scss";
 
@@ -67,7 +67,7 @@ export class adminHolidayList extends Component {
           >
             +Add
           </button>
-          <Modal
+          <AddHoliday
             onClose={this.showModal}
             show={this.state.show}
             holidays={this.state.holidays}

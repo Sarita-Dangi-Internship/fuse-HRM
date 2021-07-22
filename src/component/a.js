@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/main.scss";
+import Calendar from "./Calendar";
 
 export default class Modal extends Component {
   onClose = (e) => {
@@ -21,18 +22,14 @@ export default class Modal extends Component {
           <div className="modal_body">
             <p className="holiday_date_title">Holiday Date</p>
             <div className="calendar">
-              {this.props.holidays.map((holiday) => {
-                return holiday.name;
-              })}
+              <Calendar />
             </div>
             <p className="holiday_desc_title">Holiday Description</p>
             <div>
               <input
                 type="text-field"
                 className="holiday_desc"
-                placeholder={this.props.holidays.map((holiday, i) => {
-                  return holiday.name;
-                })}
+                placeholder={this.props.holidays[0].name}
               ></input>
             </div>
           </div>
