@@ -25,7 +25,7 @@ function App() {
               />
               <Route path={routes.dashboard} component={DashBoard}  />
               <Route path={routes.leavedetails} component={LeaveDetails} />
-
+             
             </Switch>
           </div>
         </div>

@@ -23,6 +23,18 @@ body {
             margin-bottom:21px ;
         }
     }
+    &__button{
+        display: flex;
+        flex-direction : row-reverse;
+        margin-right: 13px;
+
+        &--style{
+            background-color:#0C396B;
+            color:white;
+            padding: 9px;
+            border-radius: 6px;
+        }
+    }
  
 }
 

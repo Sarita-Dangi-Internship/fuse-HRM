@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
 import {
   Table,
@@ -8,16 +7,13 @@ import {
   TableHead,
   TableRow,
   Paper,
-  Avatar,
   Typography,
   TablePagination,
   TableFooter,
 } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
-  table: {
-   
-  },
+  table: {},
   tableHeaderCell: {
     fontSize: 14,
     backgroundColor: "white",
@@ -33,7 +29,15 @@ const useStyles = makeStyles(() => ({
     height: "25px",
     width: "25px",
     position: "absolute",
-    top: "15px"
+    top: "15px",
+  },
+
+  actions: {
+    fontSize:"12px",
+    borderRadius:"6px",
+    padding:"4px",
+    color:'white',
+    textAlign:"center",
   },
 }));
 
@@ -59,15 +63,15 @@ let USERS = [],
   LEAVE = ["Annual Leave", "Sick Leave"],
   REASON = ["Personal", "Headache"],
   STATUS = ["Pending", "Approved", "Rejected"];
-
+  
 for (let i = 0; i < 14; i++) {
   USERS[i] = {
+    employeeName: "John Smith",
     leaveName: LEAVE[Math.floor(Math.random() * LEAVE.length)],
     from: "5/6/2021",
     to: "5/7/2021",
     leaveType: "First Half",
     days: "1",
-    verifiedBy: "Daniel Brown",
     status: STATUS[Math.floor(Math.random() * STATUS.length)],
     reason: REASON[Math.floor(Math.random() * LEAVE.length)],
     actions: "",
@@ -95,6 +99,9 @@ export default function BodyTable() {
           <TableHead>
             <TableRow>
               <StyledTableCell className={classes.tableHeaderCell}>
+                Employee&nbsp;Name
+              </StyledTableCell>
+              <StyledTableCell className={classes.tableHeaderCell}>
                 Leave&nbsp;Name
               </StyledTableCell>
               <StyledTableCell className={classes.tableHeaderCell}>
@@ -108,9 +115,6 @@ export default function BodyTable() {
               </StyledTableCell>
               <StyledTableCell className={classes.tableHeaderCell}>
                 Days
-              </StyledTableCell>
-              <StyledTableCell className={classes.tableHeaderCell}>
-                Verified&nbsp;By
               </StyledTableCell>
               <StyledTableCell className={classes.tableHeaderCell}>
                 Status
@@ -130,13 +134,13 @@ export default function BodyTable() {
             ).map((row) => (
               <StyledTableRow key={row.name}>
                 <StyledTableCell component="th" scope="row">
-                  {row.leaveName}
+                  {row.employeeName}
                 </StyledTableCell>
+                <StyledTableCell>{row.leaveName}</StyledTableCell>
                 <StyledTableCell>{row.from}</StyledTableCell>
                 <StyledTableCell>{row.to}</StyledTableCell>
                 <StyledTableCell>{row.leaveType}</StyledTableCell>
                 <StyledTableCell>{row.days}</StyledTableCell>
-                <StyledTableCell>{row.verifiedBy}</StyledTableCell>
                 <StyledTableCell>
                   <Typography
                     className={classes.status}
@@ -152,23 +156,30 @@ export default function BodyTable() {
                   </Typography>
                 </StyledTableCell>
                 <StyledTableCell>{row.reason}</StyledTableCell>
-                <StyledTableCell style={{ position: "relative" }}>
-                  <Avatar
-                    src="edit.svg"
-                    className={classes.avatar}
-                    style={{left: "0px" }}
-                  />
-                  <Avatar
-                    src="remove.svg"
-                    className={classes.avatar}
-                    style={{left: "40px" }}
-                  />
+                <StyledTableCell>
+                  <Typography
+                    className={classes.actions}
+                    style={{
+                      backgroundColor:"#C1451E",position:"absolute"
+                    }}
+                  >
+                    {row.actions}{"Approve"}
+                  </Typography>
+                  <Typography
+                    className={classes.actions}
+                    style={{
+                      backgroundColor:"#5A9E00",
+                      marginLeft:"60px"
+                    }}
+                  >
+                    {row.actions}{"Reject"}
+                  </Typography>
+
                 </StyledTableCell>
               </StyledTableRow>
             ))}
           </TableBody>
         </Table>
-
       </TableContainer>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <TableFooter>
