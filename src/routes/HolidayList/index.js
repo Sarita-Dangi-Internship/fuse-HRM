@@ -4,7 +4,6 @@ import React, { Component } from "react";
 class adminHolidayList extends Component {
   constructor() {
     super();
-    debugger;
     this.state = {
       holidays: [
         {

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Table } from "react-bootstrap";
-import "../styles/main.scss";
 
 export class LeaveSummary extends Component {
   constructor() {

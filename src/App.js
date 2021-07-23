@@ -30,9 +30,10 @@ function App() {
                 exact={true}
               />
               <Route path={routes.dashboard} component={DashBoard} />
-              <Route path={routes.leavesummary} component={LeaveSummary} />
+              <Route path={routes.leaveSummary} component={LeaveSummary} />
               <Route path={routes.leavedetails} component={LeaveDetails} />
               <Route path={routes.holidayList} component={HolidayList} />
+              <Route render={() => <Redirect to={routes.dashboard} />} />
             </Switch>
           </div>
         </div>
