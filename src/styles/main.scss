@@ -1,8 +1,8 @@
 // ==========================================================================
 // Global Settings
 // ==========================================================================
-@import 'helpers/config';
-@import 'helpers/colors';
+@import "helpers/config";
+@import "helpers/colors";
 // Mixins
 // @import 'helpers/mixins/breakpoints';
 // @import 'helpers/mixins/clearfix';
@@ -18,9 +18,10 @@
 // ==========================================================================
 // Base Styles
 // ==========================================================================
-@import 'base/reset';
-@import 'base/base';
-@import 'base/typography';
+@import "base/reset";
+@import "base/base";
+// @import 'base/typography';
+@import "base/typography";
 
 // ==========================================================================
 // Components
@@ -32,17 +33,14 @@
 
 //Layouts
 // @import 'layouts/todo';
-@import 'layouts/leaveDetails';
-@import 'layouts/login';
-@import 'layouts/index';
+@import "layouts/leaveDetails";
+@import "layouts/login";
+@import "layouts/index";
+@import "layouts/adminHolidayList";
+@import "layouts/addHolidayList";
+
 //components
-@import 'components/sidebar';
-@import 'components/navbar';
-@import 'components/datepicker';
-@import 'layouts/dashboard';
-
-
-
-
-
-
+@import "components/sidebar";
+@import "components/navbar";
+@import "components/datepicker";
+@import "layouts/dashboard";

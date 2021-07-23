@@ -1,0 +1,150 @@
+.holiday {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin: auto;
+  width: 817px;
+  color: #8b849a;
+  text-align: left;
+  background: #f6f6f7;
+}
+.title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 0 10px 0;
+}
+.add_btn {
+  background: #0c396b;
+  border-radius: 7px;
+  padding: 11px 26px;
+  margin: 10px 0 0 692px;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+}
+.add_btn:hover {
+  cursor: pointer;
+}
+.holiday h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 20px;
+  margin: 0;
+}
+.holidays {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 50px;
+}
+
+.holiday_box {
+  font-weight: 600;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  text-align: left;
+  background: #ffffff;
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px 5px rgb(202, 198, 198);
+}
+.holiday_box_left {
+  margin: 0 71.5px 0 10px;
+}
+.holiday_box_right {
+  margin: 0 80px 0 1.5px;
+}
+.user_name {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.496657px;
+}
+.user_date {
+  padding-top: 5px;
+  font-weight: 500;
+}
+.line {
+  background: #135db0;
+  width: 4px;
+  height: 25px;
+}
+.line_in_box {
+  height: auto;
+  border-radius: 5px;
+}
+.line_out_box_left {
+  margin-left: 20px;
+}
+.line_out_box_right {
+  margin-left: 12px;
+}
+.line_end {
+  border-radius: 0 0 10px 10px;
+  height: 20px;
+}
+.line_end_left {
+  margin-left: 20px;
+}
+.line_end_right {
+  margin-left: 12px;
+}
+.circle {
+  margin: 0;
+  height: 14px;
+  width: 14px;
+  border-radius: 20px;
+  position: relative;
+  bottom: -13px;
+}
+.circle_left {
+  left: 15px;
+}
+.circle_right {
+  left: 7.4px;
+}
+.close_btn {
+  padding: 0;
+  margin: 0 0 0 110px;
+  width: 14px;
+  border-radius: 20px;
+  background: #8b849a;
+  color: white;
+  border: none;
+}
+.page_num {
+  display: flex;
+  justify-content: flex-end;
+  margin: 18px 40px 20px 0;
+}
+.arrow_btn {
+  margin-left: 9px;
+  padding: 1px 7px;
+  border-radius: 50%;
+  border: 2px solid rgba(139, 132, 154, 0.22);
+}
+.arrow {
+  border: solid #135db0;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.pages {
+  color: #2f70b9;
+  font-size: 14px;
+}
+.page_title {
+  font-size: 14px;
+  margin-right: 11px;
+}
