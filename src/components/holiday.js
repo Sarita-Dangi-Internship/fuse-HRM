@@ -78,7 +78,7 @@ const HolidayBox = (holiday) => {
       <div className="line line_in_box"></div>
       <div>
         <div className="user_name">{holiday.name}</div>
-        <div>{getFormattedDate(holiday.date)}</div>
+        <div className="date_display">{getFormattedDate(holiday.date)}</div>
         <br></br>
       </div>
     </div>
@@ -89,10 +89,10 @@ const TopLine = () => {
   return (
     <div className="holidays">
       <div>
-        <div className="line circle"></div>
+        <div className="line circle circle_left "></div>
       </div>
       <div>
-        <div className="line circle"></div>
+        <div className="line circle circle_right"></div>
       </div>
     </div>
   );

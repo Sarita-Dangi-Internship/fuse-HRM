@@ -1,8 +1,11 @@
+body {
+  font-family: Roboto;
+}
 .holiday {
   border: 1px solid lightgray;
   border-radius: 8px;
   margin: 3rem auto;
-  width: 60%;
+  width: 775px;
   color: #8b849a;
   text-align: left;
   background: #f6f6f7;
@@ -22,36 +25,43 @@
 .holidays {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 50px;
+  padding: 0 9.8px 0 56px;
 }
 
 .holiday_box {
   font-weight: 600;
+  width: 287px;
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 11fr;
   text-align: left;
+  margin: 0 10px;
   background: #ffffff;
-  margin: 0px 10px;
-  height: fit-content;
   border-radius: 5px;
   box-shadow: 2px 3px 10px 5px rgb(202, 198, 198);
+}
+.holiday_box_left {
+  margin: 0 58px 0 10px;
 }
 .user_name {
   font-size: 14px;
   letter-spacing: 0.496657px;
   font-weight: bold;
 }
+.date_display {
+  font-weight: 500;
+  font-size: 14px;
+}
 .line {
   background: #135db0;
   width: 4px;
-  height: 30px;
 }
 .line_in_box {
   height: auto;
   border-radius: 5px;
 }
 .line_out_box {
+  height: 30px;
   margin-left: 20px;
 }
 .line_end {
@@ -66,13 +76,18 @@
   border-radius: 20px;
   position: relative;
   bottom: -15px;
-  left: 0.93rem;
+
+  &_left {
+    left: 0.93rem;
+  }
+  &_right {
+    left: 0.94rem;
+  }
 }
 .close_btn {
-  padding: 0 6px 10px;
+  padding: 0;
   margin-top: 2px;
-  height: 21px;
-  width: 22px;
+  width: 25px;
   border-radius: 20px;
   background: #8b849a;
   color: white;
@@ -108,5 +123,7 @@
   color: #2f70b9;
 }
 .page_title {
-  margin-right: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 11px;
 }
