@@ -29,12 +29,6 @@ export default class addHoliday extends Component {
                 </Form.Label>
                 <div className="calendar">
                   <Calendar />
-                  <img
-                    className="calendar_pic"
-                    alt="calendar"
-                    src={"/images/calendar.png"}
-                    onClick={<Calendar />}
-                  />
                 </div>
               </Form.Group>
               <Form.Group as={Col}>
