@@ -8,56 +8,36 @@ export class LeaveSummary extends Component {
     this.state = {
       users: [
         {
-          name: "Niren Shah",
-          opening_bal: 0.0,
-          allocated_date: 4.0,
-          accumulation_days: 4.0,
-          accumulation_hrs: 4.0,
-          adjusted: 1.0,
+          name: "Annual Leave",
+          allocated_days: 4.0,
           total: 8.5,
           used: 3.5,
           bal: 2.5,
         },
         {
-          name: "Niren Shah",
-          opening_bal: 0.0,
-          allocated_date: 4.0,
-          accumulation_days: 4.0,
-          accumulation_hrs: 4.0,
-          adjusted: 1.0,
+          name: "Floating Leave",
+          allocated_days: 4.0,
           total: 8.5,
           used: 3.5,
           bal: 2.5,
         },
         {
-          name: "Niren Shah",
-          opening_bal: 0.0,
-          allocated_date: 4.0,
-          accumulation_days: 4.0,
-          accumulation_hrs: 4.0,
-          adjusted: 1.0,
+          name: "Substitute Leave",
+          allocated_days: 4.0,
           total: 8.5,
           used: 3.5,
           bal: 2.5,
         },
         {
-          name: "Niren Shah",
-          opening_bal: 0.0,
-          allocated_date: 4.0,
-          accumulation_days: 4.0,
-          accumulation_hrs: 4.0,
-          adjusted: 1.0,
+          name: "Sick Leave",
+          allocated_days: 4.0,
           total: 8.5,
           used: 3.5,
           bal: 2.5,
         },
         {
-          name: "Niren Shah",
-          opening_bal: 0.0,
-          allocated_date: 4.0,
-          accumulation_days: 4.0,
-          accumulation_hrs: 4.0,
-          adjusted: 1.0,
+          name: "Covid Leave",
+          allocated_days: 4.0,
           total: 8.5,
           used: 3.5,
           bal: 2.5,
@@ -92,11 +72,7 @@ const TableHead = () => {
     <thead>
       <tr className="font_style">
         <th>Name</th>
-        <th>Opening Balance</th>
-        <th>Allocated Date</th>
-        <th>Accumulation Days</th>
-        <th>Accumulation Hours</th>
-        <th>Adjusted</th>
+        <th>Allocated Days</th>
         <th>Total</th>
         <th>Used</th>
         <th>Balance</th>
@@ -112,11 +88,7 @@ const TableBody = (state) => {
         return (
           <tr className="font_style" key={i}>
             <td>{user.name}</td>
-            <td>{user.opening_bal.toFixed(1)}</td>
-            <td>{user.allocated_date.toFixed(1)}</td>
-            <td>{user.accumulation_days.toFixed(1)}</td>
-            <td>{user.accumulation_hrs.toFixed(1)}</td>
-            <td>{user.adjusted.toFixed(1)}</td>
+            <td>{user.allocated_days.toFixed(1)}</td>
             <td>{user.total.toFixed(1)}</td>
             <td>{user.used.toFixed(1)}</td>
             <td>{user.bal.toFixed(1)}</td>
@@ -140,7 +112,6 @@ const Footer = (state) => {
       <a href="/" className="curved_side">
         {state.pageNum + 1}
       </a>
-
       <a href="/" className="arrow_btn">
         <i className="arrow right"></i>
       </a>
