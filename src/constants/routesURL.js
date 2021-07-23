@@ -3,4 +3,5 @@ export const routes = {
   dashboard: "/dashboard",
   leavedetails:"/leavedetails",
   login:"/login",
+  holidayList: "/holidayList",
 };

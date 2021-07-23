@@ -1,10 +1,10 @@
-import AddHoliday from "./AddHoliday";
+import AddHoliday from "../AddHoliday";
 import React, { Component } from "react";
-import "../../styles/main.scss";
 
-export class adminHolidayList extends Component {
+class adminHolidayList extends Component {
   constructor() {
     super();
+    debugger;
     this.state = {
       holidays: [
         {

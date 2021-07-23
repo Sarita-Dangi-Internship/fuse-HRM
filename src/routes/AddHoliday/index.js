@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Col, Form, Modal } from "react-bootstrap";
-import "../../../styles/main.scss";
-import calendarPic from "../../../calendar.png";
 import Calendar from "./component/Calendar";
 
 export default class addHoliday extends Component {
@@ -34,7 +32,7 @@ export default class addHoliday extends Component {
                   <img
                     className="calendar_pic"
                     alt="calendar"
-                    src={calendarPic}
+                    src={"/images/calendar.png"}
                     onClick={<Calendar />}
                   />
                 </div>

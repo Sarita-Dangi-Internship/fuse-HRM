@@ -7,8 +7,8 @@ import LoginPage from "./components/LoginPage";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
 import LeaveDetails from "./components/LeaveDetails";
-import "./styles/main.scss";
 import DashBoard from "./routes/dashboard/index";
+import HolidayList from "./routes/HolidayList";
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
               />
               <Route path={routes.dashboard} component={DashBoard} />
               <Route path={routes.leavedetails} component={LeaveDetails} />
+              <Route path={routes.holidayList} component={HolidayList} />
             </Switch>
           </div>
         </div>
