@@ -1,11 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/main.scss";
+import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { routes } from "./constants/routesURL";
+import LoginPage from "./components/LoginPage";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
+import LeaveDetails from "./components/LeaveDetails";
 import DashBoard from "./routes/dashboard/index";
 import LeaveSummary from "./routes/leaveSummary";
+import HolidayList from "./routes/HolidayList";
 
 function App() {
   return (
@@ -18,6 +22,8 @@ function App() {
           <div className="wrapper__body">
             <NavBar />
             <Switch>
+              //change it later to pvt route//
+              <Route path={routes.login} component={LoginPage} />
               <Route
                 path={routes.index}
                 render={() => <Redirect to={routes.dashboard} />}
@@ -25,6 +31,8 @@ function App() {
               />
               <Route path={routes.dashboard} component={DashBoard} />
               <Route path={routes.leavesummary} component={LeaveSummary} />
+              <Route path={routes.leavedetails} component={LeaveDetails} />
+              <Route path={routes.holidayList} component={HolidayList} />
             </Switch>
           </div>
         </div>
@@ -32,5 +40,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;
