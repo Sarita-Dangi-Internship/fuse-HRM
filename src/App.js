@@ -8,6 +8,7 @@ import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
 import LeaveDetails from "./components/LeaveDetails";
 import DashBoard from "./routes/dashboard/index";
+import LeaveSummary from "./routes/leaveSummary";
 import HolidayList from "./routes/HolidayList";
 
 function App() {
@@ -29,8 +30,10 @@ function App() {
                 exact={true}
               />
               <Route path={routes.dashboard} component={DashBoard} />
+              <Route path={routes.leaveSummary} component={LeaveSummary} />
               <Route path={routes.leavedetails} component={LeaveDetails} />
               <Route path={routes.holidayList} component={HolidayList} />
+              <Route render={() => <Redirect to={routes.dashboard} />} />
             </Switch>
           </div>
         </div>

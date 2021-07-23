@@ -1,7 +1,8 @@
 export const routes = {
   index: "/",
   dashboard: "/dashboard",
-  leavedetails:"/leavedetails",
-  login:"/login",
-  holidayList: "/holidayList",
+  leaveSummary: "/leave-summary",
+  leavedetails: "/leavedetails",
+  login: "/login",
+  holidayList: "/holiday-list",
 };

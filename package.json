@@ -46,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Sarita-Dangi-Internship/fuse-HRM.git",
+  "author": "Akrit08 <newar.akrit08@gmail.com>",
+  "license": "MIT"
 }
