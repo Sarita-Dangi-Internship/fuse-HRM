@@ -31,6 +31,11 @@
 // @import 'components/button';
 // @import 'components/checkbox';
 
+// .banner {
+//   height: 500px;
+//   background-color: teal;
+//   @include slanted-edge(after, false, 3deg);
+// }
 //Layouts
 // @import 'layouts/todo';
 @import "layouts/leaveDetails";
@@ -44,3 +49,4 @@
 @import "components/navbar";
 @import "components/datepicker";
 @import "layouts/dashboard";
+@import "layouts/leaveSummary";
