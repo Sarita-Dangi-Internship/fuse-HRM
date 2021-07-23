@@ -33,16 +33,17 @@
 
 //Layouts
 // @import 'layouts/todo';
-@import "Layouts/adminHolidayList";
-@import "Layouts/addHolidayList";
-
-// .banner {
-//   height: 500px;
-//   background-color: teal;
-//   @include slanted-edge(after, false, 3deg);
-// }
+@import 'layouts/leaveDetails';
+@import 'layouts/login';
+@import 'layouts/index';
 //components
-@import "components/sidebar";
-@import "components/navbar";
-@import "components/datepicker";
-@import "layouts/dashboard";
+@import 'components/sidebar';
+@import 'components/navbar';
+@import 'components/datepicker';
+@import 'layouts/dashboard';
+
+
+
+
+
+
