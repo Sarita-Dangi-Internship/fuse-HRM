@@ -54,8 +54,8 @@ class adminHolidayList extends Component {
   render() {
     return (
       <div className="holiday">
-        <div>
-          <h3 className="title">Holiday List</h3>
+        <div className="holiday_title">
+          <h3 className="holiday_list_title">Holiday List</h3>
         </div>
         <div>
           <button
