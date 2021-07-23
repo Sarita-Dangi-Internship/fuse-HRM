@@ -9,15 +9,12 @@ import {
   TableRow,
   Paper,
   Avatar,
-  Typography,
   TablePagination,
   TableFooter,
 } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
-  table: {
-   
-  },
+  table: {},
   tableHeaderCell: {
     fontSize: 14,
     backgroundColor: "white",
@@ -33,7 +30,15 @@ const useStyles = makeStyles(() => ({
     height: "25px",
     width: "25px",
     position: "absolute",
-    top: "15px"
+    top: "15px",
+  },
+
+  actions: {
+    fontSize: "12px",
+    borderRadius: "6px",
+    padding: "4px",
+    color: "white",
+    textAlign: "center",
   },
 }));
 
@@ -55,21 +60,13 @@ const StyledTableRow = withStyles(() => ({
   },
 }))(TableRow);
 
-let USERS = [],
-  LEAVE = ["Annual Leave", "Sick Leave"],
-  REASON = ["Personal", "Headache"],
-  STATUS = ["Pending", "Approved", "Rejected"];
-
+let USERS = [];
 for (let i = 0; i < 14; i++) {
   USERS[i] = {
-    leaveName: LEAVE[Math.floor(Math.random() * LEAVE.length)],
-    from: "5/6/2021",
-    to: "5/7/2021",
-    leaveType: "First Half",
-    days: "1",
-    verifiedBy: "Daniel Brown",
-    status: STATUS[Math.floor(Math.random() * STATUS.length)],
-    reason: REASON[Math.floor(Math.random() * LEAVE.length)],
+    employeeName: "John Smith",
+    department:"Design",
+    designation:"Designer",
+    joinDate:"5/4/2021",
     actions: "",
   };
 }
@@ -94,28 +91,16 @@ export default function BodyTable() {
           <TableHead>
             <TableRow>
               <StyledTableCell className={classes.tableHeaderCell}>
-                Leave&nbsp;Name
+                Employee&nbsp;Name
               </StyledTableCell>
               <StyledTableCell className={classes.tableHeaderCell}>
-                From
+                Department
               </StyledTableCell>
               <StyledTableCell className={classes.tableHeaderCell}>
-                To
+                Designation
               </StyledTableCell>
               <StyledTableCell className={classes.tableHeaderCell}>
-                Leave&nbsp;Type
-              </StyledTableCell>
-              <StyledTableCell className={classes.tableHeaderCell}>
-                Days
-              </StyledTableCell>
-              <StyledTableCell className={classes.tableHeaderCell}>
-                Verified&nbsp;By
-              </StyledTableCell>
-              <StyledTableCell className={classes.tableHeaderCell}>
-                Status
-              </StyledTableCell>
-              <StyledTableCell className={classes.tableHeaderCell}>
-                Reason
+                Join&nbsp;Date
               </StyledTableCell>
               <StyledTableCell className={classes.tableHeaderCell}>
                 Actions
@@ -129,28 +114,11 @@ export default function BodyTable() {
             ).map((row) => (
               <StyledTableRow key={row.name}>
                 <StyledTableCell component="th" scope="row">
-                  {row.leaveName}
+                  {row.employeeName}
                 </StyledTableCell>
-                <StyledTableCell>{row.from}</StyledTableCell>
-                <StyledTableCell>{row.to}</StyledTableCell>
-                <StyledTableCell>{row.leaveType}</StyledTableCell>
-                <StyledTableCell>{row.days}</StyledTableCell>
-                <StyledTableCell>{row.verifiedBy}</StyledTableCell>
-                <StyledTableCell>
-                  <Typography
-                    className={classes.status}
-                    style={{
-                      backgroundColor:
-                        (row.status === "Approved" && "#5A9E00") ||
-                        (row.status === "Pending" && "#2882E8") ||
-                        (row.status === "Rejected" && "#C1451E"),
-                      textAlign: "center",
-                    }}
-                  >
-                    {row.status}{" "}
-                  </Typography>
-                </StyledTableCell>
-                <StyledTableCell>{row.reason}</StyledTableCell>
+                <StyledTableCell>{row.department}</StyledTableCell>
+                <StyledTableCell>{row.designation}</StyledTableCell>
+                <StyledTableCell>{row.joinDate}</StyledTableCell>
                 <StyledTableCell style={{ position: "relative" }}>
                   <Avatar
                     src="edit.svg"
@@ -167,7 +135,6 @@ export default function BodyTable() {
             ))}
           </TableBody>
         </Table>
-
       </TableContainer>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <TableFooter>

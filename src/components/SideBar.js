@@ -47,3 +47,4 @@ export default class SideBar extends Component {
     );
   }
 }
+
