@@ -5,8 +5,9 @@ import { routes } from "./constants/routes";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
 import DashBoard from "./pages/dashboard/index";
-import LeaveRequest from './components/leaveRequest';
-import LeaveRequestDashboard from './components/leaveRequestDashboard';
+import LeaveRequest from './pages/dashboard/leaveRequest/leaveRequest';
+import LeaveRequestDashboard from './pages/dashboard/leaveRequest/leaveRequestDashboard';
+import DeleteView from "./components/DeleteView";
 function App() {
   return (
     
@@ -28,6 +29,7 @@ function App() {
               <Route path={routes.dashboard} component={DashBoard} />
               <Route path={routes.leaverequest} component={LeaveRequestDashboard} />
               <Route path={routes.leaverequestone} component={LeaveRequest} />
+              <Route path={routes.deleteView} component={DeleteView} />
             </Switch>
             
           </div>

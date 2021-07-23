@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 import { Button, Modal, Form, Row, Col, Card, ListGroup } from "react-bootstrap";
 
-import Calendar from "../components/Calendar";
+import Calendar from "./component/Calendar";
 
 class LeaveRequestDashboard extends Component {
   render() {
     return (
-      <div>
-        <div className="custom-calendar">
+      <Row className="LeaveRequestDashboard ">
+        <div className="custom-calendar custom-border ">
           <Calendar />
         </div>
         <div>
         <div className="dark-btn leave-btn">
         <Button  variant="primary">Leave Request</Button>
         </div>
-        <Card style={{ width: '18rem' }}>
-  <Card.Header>Leave Balance</Card.Header>
+        <Card className="custom-border" style={{ width: '350px' }}>
+  <Card.Header >Leave Balance</Card.Header>
   <ListGroup variant="flush">
   <ListGroup horizontal className="" >
     <ListGroup.Item className="card-list">Annual Leave</ListGroup.Item>
@@ -41,8 +41,8 @@ class LeaveRequestDashboard extends Component {
   </ListGroup>
 </Card>
 </div>
-hello world
-      </div>
+
+      </Row>
     );
   }
 }
