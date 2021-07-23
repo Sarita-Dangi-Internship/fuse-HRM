@@ -10,8 +10,9 @@ class updateProfile extends Component {
         <div className="updateProfile">
   
     <Modal show={true} size="lg"  className=".modal-backdrop modal-profile">
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Title>Update Profile</Modal.Title>
+            <button type="button" class="close-btn" aria-label="Close" closeButton></button>
           </Modal.Header>
 
           <Modal.Body>
@@ -31,8 +32,8 @@ class updateProfile extends Component {
               </div>
             </div>
 
-            <Form>
-              <Row className="mb-2">
+            <Form className="upload-form">
+              <Row >
                 <Form.Group as={Col}>
                   <Form.Label>Full Name</Form.Label>
                   <Form.Control type="name" placeholder="John Doe" />
@@ -41,11 +42,11 @@ class updateProfile extends Component {
                   <Form.Label>Department</Form.Label>
                   <Form.Control as="select" defaultValue="Choose...">
                     <option>Choose...</option>
-                    <option>...</option>
+                    <option>Management</option>
                   </Form.Control>
                 </Form.Group>
               </Row>
-              <Row className="mb-2">
+              <Row className="">
                 <Form.Group as={Col}>
                   <Form.Label>Bio</Form.Label>
                   <Form.Control
@@ -62,18 +63,29 @@ class updateProfile extends Component {
                   </Form.Control>
                 </Form.Group>
               </Row>
-              <Row className="mb-2">
+              <Row className="">
+              <Form.Group as={Col}>
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="email" placeholder="johndoe@gmail.com" />
+                </Form.Group>
                 <Form.Group as={Col}>
                   <Form.Label>Date Joined</Form.Label>
                   <Form.Control type="date" placeholder="5/5/2020" />
                 </Form.Group>
               </Row>
+              <Row className="">
+              <Form.Group as={Col}>
+                  <Form.Label>Contact Number</Form.Label>
+                  <Form.Control type="number" placeholder="9849661192" />
+                </Form.Group>
+                \
+              </Row>
             </Form>
           </Modal.Body>
 
-          <Modal.Footer>
-            <Button variant="secondary">Cancel</Button>
-            <Button variant="primary">Save</Button>
+          <Modal.Footer className="dark-btn">
+            <Button  variant="secondary">Cancel</Button>
+            <Button className="dark-btn" variant="primary">Save</Button>
           </Modal.Footer>
         </Modal>
     
