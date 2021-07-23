@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import profile from "../../templates/profile.png";
 import icon from "../../templates/person-icon.svg";
-import Calender from "../../components/Calender";
-import NavBar from "../../components/NavBar";
-import SideBar from "./../../components/SideBar";
-import PieChart from "./../../components/PieChart";
+import Calender from "./components/Calender";
+import PieChart from "./components/PieChart";
 
 export default class Dashboard extends Component {
   render() {

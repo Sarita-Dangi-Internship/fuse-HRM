@@ -34,6 +34,8 @@ $black: #000000;
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 0px 21px;
+  max-height: calc(100vh - 80.8px);
+  overflow: auto;
 
   &__left {
     flex-grow: 2;

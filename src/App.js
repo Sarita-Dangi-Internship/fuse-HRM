@@ -1,12 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/main.scss";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import { routes } from "./constants/routes";
+import { routes } from "./constants/routesURL";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
+<<<<<<< HEAD
 import DashBoard from "./pages/dashboard/index";
 import LeaveDetails from './components/LeaveDetails'
 import "./styles/main.scss";
+=======
+import DashBoard from "./routes/dashboard/index";
+
+>>>>>>> 50d6ec008f4c97b8f214c01f6b3ac0bc9b7a7e8d
 function App() {
   return (
     <BrowserRouter>
