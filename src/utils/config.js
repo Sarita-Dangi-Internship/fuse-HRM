@@ -1,3 +1,5 @@
-const clientUrl=process.env.REACT_APP_GOOGLE_CLIENT_ID;
+const config = {
+  clientID: process.env.REACT_APP_CLIENT_ID,
+};
 
-export default clientUrl;
+export default config;
