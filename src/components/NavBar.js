@@ -21,10 +21,10 @@ export default class NavBar extends Component {
           <div className="navbar__title">
             <h1>Dashboard</h1>
           </div>
-          <div className="navbar__search">
+          {/* <div className="navbar__search">
             <img className="navbar__search--icon" src={searchicon} />
             <input type="text" placeholder="search" />
-          </div>
+          </div> */}
           <div className="navbar__profile">
             <ul className="profile__detail">
               <li className="profile__detail__item">
