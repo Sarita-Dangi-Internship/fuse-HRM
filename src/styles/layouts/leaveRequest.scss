@@ -10,7 +10,10 @@
   padding: 12px;
 }
 .formCheck-text{
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 20px;
+    
 
 }
 .custom-control-input:checked~.custom-control-label::before{
@@ -24,9 +27,13 @@
   background-color: white;
   height: 16px;
     width: 16px;
+   
 }
   
+.custom-switch{
+  margin-left: 10px;
 
+}
 
 .custom-switch .custom-control-label::before{
   background-color: #8B849A78;

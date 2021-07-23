@@ -19,8 +19,7 @@ const Calendar = () => {
     useWeekdaysShort={true}
       selected={startDate}
       onChange={onChange}
-      startDate={startDate}
-      endDate={endDate}
+      
       selectsRange
       inline
       renderCustomHeader={({

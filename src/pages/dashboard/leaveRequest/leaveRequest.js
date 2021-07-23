@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import { connect } from 'react-redux';
 import { Button, Modal, Form, Row, Col } from "react-bootstrap";
-
+import DefaultCalendar from '../../../components/DefaultCalendar'
 class leaveRequest extends Component {
   render() {
     return (
@@ -17,14 +17,14 @@ class leaveRequest extends Component {
               <Row >
                 <Form.Group as={Col}  md={6}>
                   <Form.Label>From(AD)</Form.Label>
-                  <Form.Control type="name" placeholder="John Doe" />
+                  
+                  <Form.Control type="date" />
                 </Form.Group>
                 <Form.Group as={Col} md={6}>
-                  <Form.Label>TO(AD)</Form.Label>
-                  <Form.Control as="select" defaultValue="Choose...">
-                    <option>Choose...</option>
-                    <option>...</option>
-                  </Form.Control>
+                  <Form.Label>To(AD)</Form.Label>
+                  <Form.Control type="date"/>
+                    
+                  
                 </Form.Group>
               </Row>
               <Row >
@@ -41,15 +41,19 @@ class leaveRequest extends Component {
                 <Form.Group as={Col}>
                   <Form.Label>Leaves</Form.Label>
                   <Form.Control as="select" defaultValue="Choose...">
-                    <option>HR</option>
-                    <option>QA</option>
+                    <option>Annual Leave(3.5)</option>
+                    <option>Floating Leave(2.5)</option>
+                    <option>Covid Leave(2.0)</option>
+                    <option>Sick Leave(3.5)</option>
+                    <option>Substitute Leave(0.5)</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group as={Col}>
                   <Form.Label>Leave Type</Form.Label>
                   <Form.Control as="select" defaultValue="Choose...">
-                    <option>HR</option>
-                    <option>QA</option>
+                    <option>First Half</option>
+                    <option>Second Half</option>
+                    <option>Full Day</option>
                   </Form.Control>
                 </Form.Group>
               </Row>
@@ -65,9 +69,9 @@ class leaveRequest extends Component {
             </Form>
           </Modal.Body>
 
-          <Modal.Footer>
+          <Modal.Footer className="dark-btn">
             <Button variant="secondary">Cancel</Button>
-            <Button variant="primary">Save</Button>
+            <Button  variant="primary">Confirm</Button>
           </Modal.Footer>
         </Modal>
       </div>
