@@ -29,7 +29,7 @@ export default class SideBar extends Component {
             </Link>
           </li>
           <li className="sidenav__list__item">
-            <Link to="">
+            <Link to={routes.leavedetails}>
               <span className="sidenav__list__item--icon leave-details-icon">
               </span>
               <span>Leave Details</span>
@@ -54,3 +54,4 @@ export default class SideBar extends Component {
     );
   }
 }
+

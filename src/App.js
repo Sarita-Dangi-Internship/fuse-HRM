@@ -6,6 +6,8 @@ import { routes } from "./constants/routesURL";
 import LoginPage from "./components/LoginPage";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
+import LeaveDetails from './components/LeaveDetails'
+import "./styles/main.scss";
 import DashBoard from "./routes/dashboard/index";
 
 function App() {
@@ -26,7 +28,9 @@ function App() {
                 render={() => <Redirect to={routes.dashboard} />}
                 exact={true}
               />
-              <Route path={routes.dashboard} component={DashBoard} />
+              <Route path={routes.dashboard} component={DashBoard}  />
+              <Route path={routes.leavedetails} component={LeaveDetails} />
+             
             </Switch>
           </div>
         </div>

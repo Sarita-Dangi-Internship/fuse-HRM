@@ -14,6 +14,7 @@ export default class Dashboard extends Component {
 
       //   <div className="wrapper__body">
       //     <NavBar />
+      
 
           <div className="main-container">
             <div className="main-container__left">
