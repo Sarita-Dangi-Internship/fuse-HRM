@@ -17,9 +17,9 @@ export default class LoginPage extends Component {
             <a className="hrm">| HRM</a>
           </div>
           <div className="loginPage__form">
-            <img src="user.svg" id="userIcon" />
+            <img src="/images/user.svg" id="userIcon" />
             <input placeholder="Username" id="username"></input> <br />
-            <img src="lock.svg" id="lockIcon" />
+            <img src="/images/lock.svg" id="lockIcon" />
             <input placeholder="Password" id="password"></input>
           </div>
           <div className="loginPage__reminders">
@@ -35,7 +35,7 @@ export default class LoginPage extends Component {
             <div className="line-right"></div>
           </div>
           <div className="loginPage__signBtnGoogle">
-            <img src="google.svg" className="google-img"></img>
+            <img src="/images/google.svg" className="google-img"></img>
             <GoogleLogin
               clientId={config.clientID}
               render={(renderProps) => (
