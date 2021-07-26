@@ -153,12 +153,12 @@ export default function BodyTable() {
                 <StyledTableCell>{row.reason}</StyledTableCell>
                 <StyledTableCell style={{ position: "relative" }}>
                   <Avatar
-                    src="edit.svg"
+                    src="/images/edit.svg"
                     className={classes.avatar}
                     style={{left: "0px" }}
                   />
                   <Avatar
-                    src="remove.svg"
+                    src="/images/remove.svg"
                     className={classes.avatar}
                     style={{left: "40px" }}
                   />
