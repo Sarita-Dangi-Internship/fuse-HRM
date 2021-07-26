@@ -29,12 +29,12 @@ function App() {
             <NavBar />
             <Switch>
               //change it later to pvt route//
-              <Route path={routes.login} component={LoginPage} />
               <Route
                 path={routes.index}
                 render={() => <Redirect to={routes.dashboard} />}
                 exact={true}
               />
+              <Route path={routes.login} component={LoginPage} />
               <Route path={routes.dashboard} component={DashBoard} />
               <Route path={routes.leaverequest} component={LeaveRequestDashboard} />
               <Route path={routes.leaverequestone} component={LeaveRequest} />
