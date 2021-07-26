@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 // import { connect } from 'react-redux';
 import { Button, Modal, Form, Row, Col } from "react-bootstrap";
-import DefaultCalendar from '../../../components/DefaultCalendar'
 class leaveRequest extends Component {
   render() {
     return (
