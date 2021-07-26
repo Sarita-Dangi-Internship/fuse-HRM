@@ -1,8 +1,8 @@
 // ==========================================================================
 // Global Settings
 // ==========================================================================
-@import 'helpers/config';
-@import 'helpers/colors';
+@import "helpers/config";
+@import "helpers/colors";
 // Mixins
 // @import 'helpers/mixins/breakpoints';
 // @import 'helpers/mixins/clearfix';
@@ -18,28 +18,33 @@
 // ==========================================================================
 // Base Styles
 // ==========================================================================
-@import 'base/reset';
-@import 'base/base';
-@import 'base/typography';
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
 
 // ==========================================================================
 // Components
 // Styles for generic UI components
 // Examples include navbar, dialog boxes, carousels, sidebar etc
 // ==========================================================================
-// @import 'components/button';
+@import 'components/button';
 // @import 'components/checkbox';
 
 //Layouts
-@import 'layouts/login';
+
 @import 'layouts/index';
+@import 'layouts/updateProfile.scss';
+@import 'layouts/leaveRequest.scss';
+@import 'layouts/LeaveRequestDashboard.scss';
+@import "layouts/leaveDetails";
+@import "layouts/login";
+@import "layouts/index";
+@import "layouts/adminHolidayList";
+@import "layouts/addHolidayList";
+
 //components
-@import 'components/sidebar';
-@import 'components/navbar';
-@import 'components/datepicker';
-@import 'layouts/dashboard';
-
-
-
-
-
+@import "components/sidebar";
+@import "components/navbar";
+@import "components/datepicker";
+@import "layouts/dashboard";
+@import "layouts/leaveSummary";

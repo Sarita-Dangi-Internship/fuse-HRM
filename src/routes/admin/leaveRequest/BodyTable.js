@@ -67,7 +67,7 @@ let USERS = [],
 for (let i = 0; i < 14; i++) {
   USERS[i] = {
     employeeName: "John Smith",
-    department:"Design",
+    leaveName: LEAVE[Math.floor(Math.random() * LEAVE.length)],
     from: "5/6/2021",
     to: "5/7/2021",
     leaveType: "First Half",

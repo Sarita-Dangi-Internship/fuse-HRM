@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { GoogleLogin } from "react-google-login";
-import {setToken, getToken} from "../utils/token";
-import clientUrl from "../utils/config";
-
+import { setToken, getToken } from "../utils/token";
+import config from "../config";
 
 export default class LoginPage extends Component {
   render() {
@@ -38,7 +37,7 @@ export default class LoginPage extends Component {
           <div className="loginPage__signBtnGoogle">
             <img src="/images/google.svg" className="google-img"></img>
             <GoogleLogin
-              clientId={clientUrl}
+              clientId={config.clientID}
               render={(renderProps) => (
                 <button
                   onClick={renderProps.onClick}

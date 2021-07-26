@@ -1,5 +1,11 @@
 export const routes = {
   index: "/",
-  dashboard: "/dashboard",
   login:"/login",
+  dashboard: "/dashboard",
+  leaveSummary: "/leave-summary",
+  leavedetails: "/leavedetails",
+  holidayList: "/holiday-list",
+  leaverequest:"/leaverequest",
+  leaverequestone:"/leaverequestone",
+  deleteView:"/deleteview",
 };

@@ -2,6 +2,9 @@ $gray: #e5e5e5;
 $white: #ffffff;
 .header {
   background-color: $gray;
+  position: sticky;
+  z-index: 99;
+  top: 0;
 }
 // .navbar {
 //   display: block;
@@ -14,6 +17,9 @@ $white: #ffffff;
   align-items: center;
 }
 
+.header {
+  margin-top: 2px;
+}
 // .navbar__title {
 //   margin-right: auto;
 // }
