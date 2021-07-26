@@ -13,6 +13,7 @@ import DeleteView from "./components/DeleteView";
 import LeaveDetails from "./components/LeaveDetails";
 import LeaveSummary from "./routes/leaveSummary";
 import HolidayList from "./routes/HolidayList";
+import UpdateProfile from "./components/UpdateProfile"
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
               <Route path={routes.leaveSummary} component={LeaveSummary} />
               <Route path={routes.leavedetails} component={LeaveDetails} />
               <Route path={routes.holidayList} component={HolidayList} />
+              <Route path={routes.updateprofile} component={UpdateProfile} />
               <Route render={() => <Redirect to={routes.dashboard} />} />
             </Switch>
             
