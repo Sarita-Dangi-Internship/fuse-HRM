@@ -7,18 +7,16 @@ import LoginPage from "./components/LoginPage";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
 import DashBoard from "./routes/dashboard/index";
-import LeaveRequest from './routes/leaveRequest/leaveRequest';
-import LeaveRequestDashboard from './routes/leaveRequest/leaveRequestDashboard';
+import LeaveRequest from "./routes/leaveRequest/leaveRequest";
+import LeaveRequestDashboard from "./routes/leaveRequest/leaveRequestDashboard";
 import DeleteView from "./components/DeleteView";
 import LeaveDetails from "./components/LeaveDetails";
 import LeaveSummary from "./routes/leaveSummary";
 import HolidayList from "./routes/HolidayList";
-import UpdateProfile from "./components/UpdateProfile"
+// import UpdateProfile from "./components/UpdateProfile"
 
 function App() {
   return (
-    
-    
     <BrowserRouter>
       <div className="App">
         <div className="wrapper">
@@ -36,25 +34,22 @@ function App() {
               />
               <Route path={routes.login} component={LoginPage} />
               <Route path={routes.dashboard} component={DashBoard} />
-              <Route path={routes.leaverequest} component={LeaveRequestDashboard} />
+              <Route
+                path={routes.leaverequest}
+                component={LeaveRequestDashboard}
+              />
               <Route path={routes.leaverequestone} component={LeaveRequest} />
               <Route path={routes.deleteView} component={DeleteView} />
               <Route path={routes.leaveSummary} component={LeaveSummary} />
               <Route path={routes.leavedetails} component={LeaveDetails} />
               <Route path={routes.holidayList} component={HolidayList} />
-              <Route path={routes.updateprofile} component={UpdateProfile} />
+              {/* <Route path={routes.updateprofile} component={UpdateProfile} /> */}
               <Route render={() => <Redirect to={routes.dashboard} />} />
             </Switch>
-            
           </div>
         </div>
       </div>
     </BrowserRouter>
-  
-
-
-
-
   );
 }
 export default App;
