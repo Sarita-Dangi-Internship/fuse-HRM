@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // import { connect } from 'react-redux';
 import { Container, Button, Modal, Form, Row, Col } from "react-bootstrap";
 
-class updateProfile extends Component {
+class UpdateProfile extends Component {
   render() {
     return (
       
@@ -95,4 +95,4 @@ class updateProfile extends Component {
     );
   }
 }
-export default updateProfile;
+export default UpdateProfile;

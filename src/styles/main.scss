@@ -1,8 +1,8 @@
 // ==========================================================================
 // Global Settings
 // ==========================================================================
-@import 'helpers/config';
-@import 'helpers/colors';
+@import "helpers/config";
+@import "helpers/colors";
 // Mixins
 // @import 'helpers/mixins/breakpoints';
 // @import 'helpers/mixins/clearfix';
@@ -18,9 +18,9 @@
 // ==========================================================================
 // Base Styles
 // ==========================================================================
-@import 'base/reset';
-@import 'base/base';
-// @import 'base/typography';
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
 
 // ==========================================================================
 // Components
@@ -30,15 +30,22 @@
 @import 'components/button';
 // @import 'components/checkbox';
 
-//Layouts
-
-@import 'Layouts/index';
-@import 'Layouts/updateProfile.scss'
 // .banner {
 //   height: 500px;
 //   background-color: teal;
 //   @include slanted-edge(after, false, 3deg);
 // }
-
-
-
+//Layouts
+// @import 'layouts/todo';
+@import "layouts/leaveDetails";
+@import "layouts/login";
+@import "layouts/index";
+@import "layouts/adminHolidayList";
+@import "layouts/addHolidayList";
+@import 'Layouts/updateProfile.scss';
+//components
+@import "components/sidebar";
+@import "components/navbar";
+@import "components/datepicker";
+@import "layouts/dashboard";
+@import "layouts/leaveSummary";
