@@ -6,13 +6,18 @@ import { routes } from "./constants/routesURL";
 import LoginPage from "./components/LoginPage";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
-import LeaveDetails from "./components/LeaveDetails";
 import DashBoard from "./routes/dashboard/index";
+import LeaveRequest from './routes/leaveRequest/leaveRequest';
+import LeaveRequestDashboard from './routes/leaveRequest/leaveRequestDashboard';
+import DeleteView from "./components/DeleteView";
+import LeaveDetails from "./components/LeaveDetails";
 import LeaveSummary from "./routes/leaveSummary";
 import HolidayList from "./routes/HolidayList";
 
 function App() {
   return (
+    
+    
     <BrowserRouter>
       <div className="App">
         <div className="wrapper">
@@ -30,15 +35,24 @@ function App() {
                 exact={true}
               />
               <Route path={routes.dashboard} component={DashBoard} />
+              <Route path={routes.leaverequest} component={LeaveRequestDashboard} />
+              <Route path={routes.leaverequestone} component={LeaveRequest} />
+              <Route path={routes.deleteView} component={DeleteView} />
               <Route path={routes.leaveSummary} component={LeaveSummary} />
               <Route path={routes.leavedetails} component={LeaveDetails} />
               <Route path={routes.holidayList} component={HolidayList} />
               <Route render={() => <Redirect to={routes.dashboard} />} />
             </Switch>
+            
           </div>
         </div>
       </div>
     </BrowserRouter>
+  
+
+
+
+
   );
 }
 export default App;
