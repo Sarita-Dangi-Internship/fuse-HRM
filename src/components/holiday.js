@@ -46,7 +46,7 @@ export class holiday extends Component {
   render() {
     return (
       <div className="holiday">
-        <div className="title">
+        <div className="holiday_title">
           <h3>Holidays</h3>
           <button className="close_btn">X</button>
         </div>
