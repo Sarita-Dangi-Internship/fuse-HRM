@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import profile from "../templates/profile.png";
 import edit from "../templates/edit-profile.svg";
 import logout from "../templates/logout.svg";
-import searchicon from "../templates/search-icon.png";
+import { GoogleLogout } from "react-google-login";
+import config from './../config/index';
+import { removeToken } from "../utils/token";
+import { Redirect } from "react-router";
+import { routes } from './../constants/routesURL';
+
 
 export default class NavBar extends Component {
   state = {
@@ -14,6 +19,11 @@ export default class NavBar extends Component {
     this.setState({ dropdownShown: !currentState });
   };
 
+  logout = () => {
+    removeToken();
+    <Redirect to={routes.login} />;
+  }
+
   render() {
     return (
       <header className="header">
@@ -21,7 +31,7 @@ export default class NavBar extends Component {
           <div className="navbar__title">
             <h1>Dashboard</h1>
           </div>
-          
+
           <div className="navbar__profile">
             <ul className="profile__detail">
               <li className="profile__detail__item">
@@ -49,7 +59,20 @@ export default class NavBar extends Component {
                     <span className="profile__operation__item--icon">
                       <img src={logout} />
                     </span>
-                    Logout
+                    <GoogleLogout
+                      clientId={config.clientID}
+                      render={(renderProps) => (
+                        <button
+                          onClick={renderProps.onClick}
+                          className="logout-btn"
+                        >
+                          Logout
+                        </button>
+                      )}
+                      onLogoutSuccess={logout}
+                    ></GoogleLogout>
+
+                    {/* Logout */}
                   </li>
                 </ul>
               </div>
