@@ -2,7 +2,7 @@ $darkBlue: #0c396b;
 $white: #fff;
 $gray: #e5e5e5;
 
-
+.main-container__right__calender{
 .react-datepicker__header:not(.react-datepicker__header--has-time-select) {
   background-color: $darkBlue;
   color: $white;
@@ -25,4 +25,5 @@ $gray: #e5e5e5;
 
 .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
   width: 2.7rem !important;
+}
 }
