@@ -70,5 +70,11 @@ $white: #ffffff;
     &--icon {
       padding: 10px;
     }
+    .logout-btn{
+      border: none;
+      outline: none;
+      color: #212529;
+      background: transparent;
+    }
   }
 }
