@@ -20,7 +20,6 @@
 // ==========================================================================
 @import "base/reset";
 @import "base/base";
-// @import 'base/typography';
 @import "base/typography";
 
 // ==========================================================================
@@ -28,22 +27,21 @@
 // Styles for generic UI components
 // Examples include navbar, dialog boxes, carousels, sidebar etc
 // ==========================================================================
-// @import 'components/button';
+@import 'components/button';
 // @import 'components/checkbox';
 
-// .banner {
-//   height: 500px;
-//   background-color: teal;
-//   @include slanted-edge(after, false, 3deg);
-// }
 //Layouts
-// @import 'layouts/todo';
+
+@import 'layouts/index';
+@import 'layouts/updateProfile.scss';
+@import 'layouts/leaveRequest.scss';
+@import 'layouts/LeaveRequestDashboard.scss';
 @import "layouts/leaveDetails";
 @import "layouts/login";
 @import "layouts/index";
 @import "layouts/adminHolidayList";
 @import "layouts/addHolidayList";
-
+@import 'Layouts/updateProfile.scss';
 //components
 @import "components/sidebar";
 @import "components/navbar";

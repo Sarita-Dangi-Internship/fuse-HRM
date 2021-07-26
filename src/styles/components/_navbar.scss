@@ -2,6 +2,9 @@ $gray: #e5e5e5;
 $white: #ffffff;
 .header {
   background-color: $gray;
+  position: sticky;
+  z-index: 99;
+  top: 0;
 }
 // .navbar {
 //   display: block;
@@ -66,6 +69,12 @@ $white: #ffffff;
     padding: 12px 15px;
     &--icon {
       padding: 10px;
+    }
+    .logout-btn{
+      border: none;
+      outline: none;
+      color: #212529;
+      background: transparent;
     }
   }
 }

@@ -4,7 +4,7 @@ export default class LeaveDetails extends Component {
   render() {
     return (
       <div className="leaveDetail">
-        <a className="leaveDetail__header">Total Leave</a>
+        <a className="leaveDetail__header" style={{textDecoration:"none"}}>Total Leave</a>
         <div className="leaveDetail__header--line"></div>
         <BodyTable/>
       </div>

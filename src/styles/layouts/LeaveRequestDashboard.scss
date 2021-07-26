@@ -1,0 +1,133 @@
+.LeaveRequestDashboard {
+  justify-content: space-between;
+  margin: 20px;
+}
+.custom-calendar {
+  .react-datepicker {
+    padding: 10px;
+    border: none;
+  }
+  .react-datepicker__day-name {
+    margin: 12px 20px;
+    line-height: 16.41px;
+    color: rgba(139, 132, 154, 1);
+  }
+  .react-datepicker__day {
+    margin: 12px 20px;
+    line-height: 16.41px;
+  }
+  .date-header {
+    justify-content: space-between !important;
+  }
+  .react-datepicker__header {
+    background-color: white;
+    border-bottom: 1px solid rgba(139, 132, 154, 0.27);
+  }
+  .react-datepicker__day-name,
+  .react-datepicker__day,
+  .react-datepicker__time-name {
+    width: 2.7rem;
+    line-height: 2.7rem;
+  }
+  .react-datepicker__day:hover,
+  .react-datepicker__month-text:hover,
+  .react-datepicker__quarter-text:hover,
+  .react-datepicker__year-text:hover {
+    border-radius: 50%;
+  }
+  .react-datepicker__day--selected,
+  .react-datepicker__day--in-selecting-range,
+  .react-datepicker__day--in-range,
+  .react-datepicker__month-text--selected,
+  .react-datepicker__month-text--in-selecting-range,
+  .react-datepicker__month-text--in-range,
+  .react-datepicker__quarter-text--selected,
+  .react-datepicker__quarter-text--in-selecting-range,
+  .react-datepicker__quarter-text--in-range,
+  .react-datepicker__year-text--selected,
+  .react-datepicker__year-text--in-selecting-range,
+  .react-datepicker__year-text--in-range {
+    border-radius: 50%;
+  }
+  .react-datepicker__navigation-icon::before,
+  .react-datepicker__year-read-view--down-arrow,
+  .react-datepicker__month-read-view--down-arrow,
+  .react-datepicker__month-year-read-view--down-arrow {
+    border-width: 0;
+  }
+  .react-datepicker__navigation--previous {
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='34' height='20' viewBox='0 0 34 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 11L32.3193 11M2 11L6.47899 15.5L10.958 20M2 11L6.47899 6.5L10.958 2' stroke='%23404245' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+  .react-datepicker__navigation--next {
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='34' height='22' viewBox='0 0 34 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 11L1.68067 11M32 11L27.521 15.5L23.042 20M32 11L27.521 6.5L23.042 2' stroke='%23404245' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+}
+.date-title {
+  margin: 0px 3px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.card-header {
+  background-color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.496656596660614px;
+  text-align: left;
+}
+.list-group-item {
+  border-bottom: none;
+}
+.card-list {
+  flex-grow: 1;
+  border: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.496656596660614px;
+  text-align: left;
+}
+.card-list-number {
+  border: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.496656596660614px;
+  text-align: left;
+}
+.custom-border {
+  color: #8b849a;
+
+  box-shadow: 0 4px 9px #cac9c9;
+  border-radius: 5px;
+}
+.leave-btn {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+//delete view
+.confirm-message{
+  padding-top:18px;
+  padding-bottom: 34px;
+ color:rgba(139, 132, 154, 1);
+ ;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0.5px;
+
+
+}
