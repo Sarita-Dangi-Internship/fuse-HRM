@@ -20,8 +20,9 @@ export default class SideBar extends Component {
             </Link>
           </li>
           <li className="sidenav__list__item">
-            <Link to="">
-              <span className="sidenav__list__item--icon leave-request-icon"></span>
+            <Link to={routes.leaverequest}>
+              <span className="sidenav__list__item--icon leave-request-icon">
+              </span>
               <span>Leave Request</span>
             </Link>
           </li>

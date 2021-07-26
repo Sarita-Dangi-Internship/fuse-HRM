@@ -5,5 +5,8 @@ export const routes = {
   leavedetails: "/leavedetails",
   login: "/login",
   holidayList: "/holiday-list",
-  updateprofile:"/updateprofile"
+  updateprofile:"/updateprofile",
+  leaverequest:"/leaverequest",
+  leaverequestone:"/leaverequestone",
+  deleteView:"/deleteview",
 };

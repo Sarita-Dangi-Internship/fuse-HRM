@@ -4,6 +4,7 @@ $hover: #b2d2f773;
 $darkBlue: #0c396b;
 
 .sidenav {
+  max-height: 100vh;
   background-color: $sidenav;
   height: 100vh;
   // padding: 12px 15px;
@@ -15,6 +16,8 @@ $darkBlue: #0c396b;
     padding: 30px 80px;
   }
   &__list {
+    max-height: calc(100vh - 80.8px);
+    overflow: auto;
     margin: auto;
     max-height: calc(100vh - 80.8px);
     overflow: auto;
