@@ -4,28 +4,27 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const Calendar = () => {
   const [startDate, setStartDate] = useState(new Date());
-  const ExampleCustomInput = forwardRef(({ value, onClick }, ref) => (
-    <button
-      className="example-custom-input"
-      onClick={(e) => {
-        e.stopPropagation();
-        onClick(e);
-      }}
-      ref={ref}
-    >
-      {value}
+  const Input = ({ value, onClick, id, placeholder }) => (
+    <>
+      <input
+        placeholder={placeholder}
+        value={value}
+        id={id}
+        onClick={onClick}
+      />
       <img
         className="calendar_pic"
         alt="calendar"
         src={"/images/calendar.png"}
+        onClick={onClick}
       />
-    </button>
-  ));
+    </>
+  );
   return (
     <ReactDatePicker
       selected={startDate}
       onChange={(date) => setStartDate(date)}
-      customInput={<ExampleCustomInput />}
+      customInput={<Input />}
     />
   );
 };

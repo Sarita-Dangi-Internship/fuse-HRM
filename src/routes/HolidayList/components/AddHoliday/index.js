@@ -28,9 +28,7 @@ export default class addHoliday extends Component {
                   Holiday Date
                 </Form.Label>
                 <div className="calendar">
-                  <label>
-                    <Calendar />
-                  </label>
+                  <Calendar />
                 </div>
               </Form.Group>
               <Form.Group as={Col}>
