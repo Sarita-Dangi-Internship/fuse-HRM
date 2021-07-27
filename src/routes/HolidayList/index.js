@@ -1,4 +1,4 @@
-import AddHoliday from "../AddHoliday";
+import AddHoliday from "./components/AddHoliday";
 import React, { Component } from "react";
 
 class adminHolidayList extends Component {
