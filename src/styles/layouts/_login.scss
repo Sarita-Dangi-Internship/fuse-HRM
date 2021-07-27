@@ -1,0 +1,177 @@
+body {
+    background-color: #E5E5E5;
+    font-family: Roboto;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginPage {
+    background-color: #ffff;
+    padding: 2px;
+
+    .header {
+        width: 235px;
+        height: 56px;
+        margin: 53px 193px;
+        color: #0C396B;
+        line-height: 56px;
+       
+        font-size: 48px;
+
+        .header-text {
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .hrm {
+            font-weight: 300;
+            text-decoration: none;
+        }
+    }
+
+    &__form {
+        position: relative;
+        margin: 0px 54px;
+        color: #8B849A;
+
+        img {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+        }
+
+        #userIcon {
+            top: 7px;
+        }
+
+        #lockIcon {
+            top: 104px;
+        }
+
+        #username {
+            line-height: 27px;
+            width: 100%;
+            font-weight: 400;
+            text-indent: 23px;
+            border: none;
+            font-size: 18px;
+            border-bottom: 1px solid rgb(204, 201, 201);
+            padding: 5px;
+            margin-bottom: 60px;
+        }
+
+        #password {
+            line-height: 27px;
+            width: 100%;
+            text-indent: 23px;
+            border: none;
+            font-weight: 400;
+            font-size: 18px;
+            border-bottom: 1px solid rgb(204, 201, 201);
+            padding: 5px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__reminders {
+        font-size: 15px;
+        margin: 0px 54px;
+        margin-bottom: 42px;
+
+        .rememberMe {
+            color: #8B849A;
+            margin-left: 5px;
+            font-weight: 500;
+            line-height: 27px;
+            font-size: 20px;
+        }
+
+        #forgetPassword {
+            color: #0C396B;
+            line-height: 27px;
+            margin-left: 174px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+
+    &__signInBtn {
+        margin: 0px 54px;
+        height: 41px;
+        background-color: #0C396B;
+        border-radius: 6px;
+        text-align: center;
+        width: 515px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        padding: 5px;
+        color: #ffff;
+    }
+
+    &__orText {
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-top: 13px;
+        color: #8B849A;
+        margin-bottom: 15px;
+
+        .line-left {
+            position: absolute;
+            margin-top: 14px;
+            height: 1px;
+            background-color: #8B849A;
+            width: 57px;
+            margin-left: 236px;
+        }
+
+        .line-right {
+            position: absolute;
+            top: 14px;
+            left: 90px;
+            height: 1px;
+            background-color: #8B849A;
+            width: 57px;
+            margin-left: 236px;
+        }
+    }
+
+    &__signBtnGoogle {
+        margin: 0px 54px;
+        position: relative;
+        height: 41px;
+       
+        margin-bottom: 63px;
+
+        .signWithGoogleBtn {
+            color: #5B92D0;
+            position: absolute;
+            padding:2px;
+            width: 515px;
+            border-radius: 6px;
+            height: 41px;
+            z-index: 0;
+            background-color: #FFFFFF;
+            border: 1px solid #5B92D0;
+           
+        }
+
+        .google-img {
+            position: absolute;
+            top: 5px;
+            left: 155px;
+            height: 30px;
+            width: 30px;
+            margin-right: 16px;
+            z-index: 1;
+        }
+    }
+}
