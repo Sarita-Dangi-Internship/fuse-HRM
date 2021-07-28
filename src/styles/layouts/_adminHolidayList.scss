@@ -1,18 +1,18 @@
-.holiday {
+.holiday_list {
   border: 1px solid lightgray;
   border-radius: 8px;
   margin: auto;
   width: 817px;
   color: #8b849a;
   text-align: left;
-  background: #f6f6f7;
+  background: #fff;
 }
-.title {
+
+.holiday_list_title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
   line-height: 27px;
+  width: 100% !important;
   border-bottom: 1px solid lightgray;
   padding: 20px 0 10px 0;
 }
@@ -28,13 +28,13 @@
 .add_btn:hover {
   cursor: pointer;
 }
-.holiday h3 {
+.holiday_list h3 {
   font-size: 20px;
   font-weight: 700;
   padding-left: 20px;
   margin: 0;
 }
-.holidays {
+.holiday_lists {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 50px;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Col, Form, Modal } from "react-bootstrap";
-import Calendar from "./component/Calendar";
+import Calendar from "./components/Calendar";
 
 export default class addHoliday extends Component {
   onClose = (e) => {
@@ -29,12 +29,6 @@ export default class addHoliday extends Component {
                 </Form.Label>
                 <div className="calendar">
                   <Calendar />
-                  <img
-                    className="calendar_pic"
-                    alt="calendar"
-                    src={"/images/calendar.png"}
-                    onClick={<Calendar />}
-                  />
                 </div>
               </Form.Group>
               <Form.Group as={Col}>

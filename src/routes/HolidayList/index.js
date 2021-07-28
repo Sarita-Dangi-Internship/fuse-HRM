@@ -1,4 +1,4 @@
-import AddHoliday from "../AddHoliday";
+import AddHoliday from "./components/AddHoliday";
 import React, { Component } from "react";
 
 class adminHolidayList extends Component {
@@ -53,9 +53,9 @@ class adminHolidayList extends Component {
 
   render() {
     return (
-      <div className="holiday">
-        <div>
-          <h3 className="title">Holiday List</h3>
+      <div className="holiday_list">
+        <div className="holiday_title">
+          <h3 className="holiday_list_title">Holiday List</h3>
         </div>
         <div>
           <button
@@ -76,7 +76,7 @@ class adminHolidayList extends Component {
         {TopLine()}
 
         {/* Actual Holidays */}
-        <div className="holidays">
+        <div className="holiday_lists">
           {this.state.holidays.map((holiday, i) => {
             return (
               <div key={i}>
@@ -124,7 +124,7 @@ const HolidayBox = (holiday) => {
 
 const TopLine = () => {
   return (
-    <div className="holidays">
+    <div className="holiday_lists">
       <div className="line circle circle_left"></div>
       <div className="line circle circle_right"></div>
     </div>
@@ -143,7 +143,7 @@ const getFormattedDate = (date) => {
 
 const endLine = () => {
   return (
-    <div className="holidays">
+    <div className="holiday_lists">
       <div>
         <div className="line line_end line_end_left"></div>
       </div>
