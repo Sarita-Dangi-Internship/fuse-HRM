@@ -17,8 +17,6 @@ import UpdateProfile from "./components/UpdateProfile"
 
 function App() {
   return (
-    
-    
     <BrowserRouter>
       <div className="App">
         <div className="wrapper">
